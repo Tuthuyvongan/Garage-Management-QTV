@@ -1,5 +1,5 @@
 # Garage-Management-QTV
-This is a project of QTV group about the garage management software.
+This is a project of QTV group is about the garage management software.
 Group include : 
 - Le Anh Vu as Leader
 - Bui Nguyen Anh Thu
