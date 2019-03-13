@@ -5,7 +5,7 @@ Group include :
 - Le Anh Vu as Leader
 - Bui Nguyen Anh Thu
 - Nguyen Van Quan
-We are Software Engineering students from University of Information Technology - Vietnam National University. 
+- We are Software Engineering students from University of Information Technology - Vietnam National University. 
 
 # SOFTWARE INTRODUCTION : 
 ** What is this software do ? 
