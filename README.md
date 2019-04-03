@@ -8,8 +8,8 @@ Group include :
 - We are Software Engineering students from University of Information Technology - Vietnam National University. 
 
 # SOFTWARE INTRODUCTION : 
-** What is this software do ? 
-This software provide plugins to help you in managing a garage. Make the garage management works become easier and faster.
+What is this software do ? 
+* This software provide plugins to help you in managing a garage. Make the garage management works become easier and faster.
 
 # PROFESSIONAL STATUS :
 There are 6 professional: 
