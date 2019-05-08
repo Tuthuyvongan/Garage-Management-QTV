@@ -34,3 +34,4 @@ There are 6 professional:
 - Le Anh Vu - 17521269@gm.uit.edu.vn
 - Nguyen Van Quan - 17520940@gm.uit.edu.vn
 - Bui Nguyen Anh Thu - 17521102@gm.uit.edu.vn
+- Nguyen Hoai Vi - 17521257@gm.uit.edu.vn
