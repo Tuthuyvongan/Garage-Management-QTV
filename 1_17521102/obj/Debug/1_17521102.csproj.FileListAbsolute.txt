@@ -1,0 +1,36 @@
+c:\users\rog\documents\visual studio 2017\Projects\1_17521102\1_17521102\bin\Debug\1_17521102.exe.config
+c:\users\rog\documents\visual studio 2017\Projects\1_17521102\1_17521102\bin\Debug\1_17521102.exe
+c:\users\rog\documents\visual studio 2017\Projects\1_17521102\1_17521102\bin\Debug\1_17521102.pdb
+c:\users\rog\documents\visual studio 2017\Projects\1_17521102\1_17521102\obj\Debug\1_17521102.csprojResolveAssemblyReference.cache
+c:\users\rog\documents\visual studio 2017\Projects\1_17521102\1_17521102\obj\Debug\_1_17521102.Form1.resources
+c:\users\rog\documents\visual studio 2017\Projects\1_17521102\1_17521102\obj\Debug\_1_17521102.Properties.Resources.resources
+c:\users\rog\documents\visual studio 2017\Projects\1_17521102\1_17521102\obj\Debug\1_17521102.csproj.GenerateResource.Cache
+c:\users\rog\documents\visual studio 2017\Projects\1_17521102\1_17521102\obj\Debug\1_17521102.exe
+c:\users\rog\documents\visual studio 2017\Projects\1_17521102\1_17521102\obj\Debug\1_17521102.pdb
+C:\Users\ROG\Documents\Visual Studio 2017\Projects\Ass2\1_17521102\bin\Debug\1_17521102.exe.config
+C:\Users\ROG\Documents\Visual Studio 2017\Projects\Ass2\1_17521102\bin\Debug\1_17521102.exe
+C:\Users\ROG\Documents\Visual Studio 2017\Projects\Ass2\1_17521102\bin\Debug\1_17521102.pdb
+C:\Users\ROG\Documents\Visual Studio 2017\Projects\Ass2\1_17521102\obj\Debug\1_17521102.csprojResolveAssemblyReference.cache
+C:\Users\ROG\Documents\Visual Studio 2017\Projects\Ass2\1_17521102\obj\Debug\_1_17521102.Form1.resources
+C:\Users\ROG\Documents\Visual Studio 2017\Projects\Ass2\1_17521102\obj\Debug\_1_17521102.Properties.Resources.resources
+C:\Users\ROG\Documents\Visual Studio 2017\Projects\Ass2\1_17521102\obj\Debug\1_17521102.csproj.GenerateResource.Cache
+C:\Users\ROG\Documents\Visual Studio 2017\Projects\Ass2\1_17521102\obj\Debug\1_17521102.exe
+C:\Users\ROG\Documents\Visual Studio 2017\Projects\Ass2\1_17521102\obj\Debug\1_17521102.pdb
+C:\Users\ADMIN\Downloads\1_17521102\1_17521102\obj\Debug\1_17521102.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Downloads\1_17521102\1_17521102\obj\Debug\_1_17521102.Form1.resources
+C:\Users\ADMIN\Downloads\1_17521102\1_17521102\obj\Debug\_1_17521102.Properties.Resources.resources
+C:\Users\ADMIN\Downloads\1_17521102\1_17521102\obj\Debug\1_17521102.csproj.GenerateResource.Cache
+C:\Users\ADMIN\Downloads\1_17521102\1_17521102\obj\Debug\1_17521102.exe
+C:\Users\ADMIN\Downloads\1_17521102\1_17521102\obj\Debug\1_17521102.pdb
+C:\Users\ADMIN\Downloads\1_17521102\1_17521102\bin\Debug\1_17521102.exe.config
+C:\Users\ADMIN\Downloads\1_17521102\1_17521102\bin\Debug\1_17521102.exe
+C:\Users\ADMIN\Downloads\1_17521102\1_17521102\bin\Debug\1_17521102.pdb
+C:\Users\ADMIN\Desktop\1_17521102\1_17521102\bin\Debug\1_17521102.exe.config
+C:\Users\ADMIN\Desktop\1_17521102\1_17521102\bin\Debug\1_17521102.exe
+C:\Users\ADMIN\Desktop\1_17521102\1_17521102\bin\Debug\1_17521102.pdb
+C:\Users\ADMIN\Desktop\1_17521102\1_17521102\obj\Debug\1_17521102.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\1_17521102\1_17521102\obj\Debug\_1_17521102.Form1.resources
+C:\Users\ADMIN\Desktop\1_17521102\1_17521102\obj\Debug\_1_17521102.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\1_17521102\1_17521102\obj\Debug\1_17521102.csproj.GenerateResource.Cache
+C:\Users\ADMIN\Desktop\1_17521102\1_17521102\obj\Debug\1_17521102.exe
+C:\Users\ADMIN\Desktop\1_17521102\1_17521102\obj\Debug\1_17521102.pdb
