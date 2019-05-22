@@ -163,9 +163,6 @@ namespace _1_17521102
                 string email = @"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*";
                 Regex reg = new Regex(email);
                 bool match = reg.IsMatch(this.txtEmail.Text);
-                string Sđt = "^0[0-9]{8}";
-                Regex reg1 = new Regex(Sđt);
-                bool match1 = reg1.IsMatch(this.txtSđt.Text);
                 errorProvider1.Clear();
                 errorProvider2.Clear();
                 errorProvider4.Clear();
@@ -187,13 +184,9 @@ namespace _1_17521102
                 {
                     errorProvider5.SetError(txtSđt, "Số điện thoại không được để trống!");
                 }
-                else if (txtSđt.Text.Length > 10 || txtSđt.Text.Length < 9)
+                else if (txtSđt.Text.Length > 11 || txtSđt.Text.Length < 9)
                 {
                     errorProvider5.SetError(txtSđt, "Số điện thoại không hợp lệ!");
-                }
-                else if (match1 == true)
-                {
-                    errorProvider5.SetError(txtSđt, "Số điện thoại không được có số 0 ở đầu!");
                 }
                 else if (txtEmail.Text == "")
                 {
@@ -209,7 +202,7 @@ namespace _1_17521102
                     if (rNam.Checked == true)
                     {
                         insert = "Insert Into Khachhang(TenKH,Đc,Ngaysinh,Gioitinh,Sdt,Email)" +
-                                 "Values('" + txtHT.Text + "','" + txtĐc.Text + "','" +
+                                 "Values(N'" + txtHT.Text + "',N'" + txtĐc.Text + "','" +
                                  dtNS.Text +
                                  "','" +
                                  rNam.Text + "','" + txtSđt.Text + "','" +
@@ -218,9 +211,9 @@ namespace _1_17521102
                     else if (rNu.Checked == true)
                     {
                         insert = "Insert Into Khachhang(TenKH,Đc,Ngaysinh,Gioitinh,Sdt,Email)" +
-                                 "Values('" + txtHT.Text + "','" + txtĐc.Text + "','" +
+                                 "Values(N'" + txtHT.Text + "',N'" + txtĐc.Text + "','" +
                                  dtNS.Text +
-                                 "','" +
+                                 "',N'" + 
                                  rNu.Text + "','" + txtSđt.Text + "','" +
                                  txtEmail.Text + "')";
                     }
@@ -261,9 +254,6 @@ namespace _1_17521102
                 string email = @"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*";
                 Regex reg = new Regex(email);
                 bool match = reg.IsMatch(this.txtEmail.Text);
-                string Sđt = "^0[0-9]{8}";
-                Regex reg1 = new Regex(Sđt);
-                bool match1 = reg1.IsMatch(this.txtSđt.Text);
                 errorProvider1.Clear();
                 errorProvider2.Clear();
                 errorProvider4.Clear();
@@ -285,13 +275,9 @@ namespace _1_17521102
                 {
                     errorProvider5.SetError(txtSđt, "Số điện thoại không được để trống!");
                 }
-                else if (txtSđt.Text.Length > 10 || txtSđt.Text.Length < 9)
+                else if (txtSđt.Text.Length > 11 || txtSđt.Text.Length < 9)
                 {
                     errorProvider5.SetError(txtSđt, "Số điện thoại không hợp lệ!");
-                }
-                else if (match1 == true)
-                {
-                    errorProvider5.SetError(txtSđt, "Số điện thoại không được có số 0 ở đầu!");
                 }
                 else if (txtEmail.Text == "")
                 {
@@ -307,14 +293,14 @@ namespace _1_17521102
                     string update = "";
                     if (rNam.Checked == true)
                     {
-                        update = "Update Khachhang Set TenKH=N'" + txtHT.Text + "',Đc='" +
+                        update = "Update Khachhang Set TenKH=N'" + txtHT.Text + "',Đc=N'" +
                                  txtĐc.Text + "',NgaySinh='" +
                                  dtNS.Text + "',GioiTinh=N'" + rNam.Text +
                                  "',Sdt='" + txtSđt.Text + "',email='" + txtEmail.Text + "'where Sdt='" + txtSđt.Text + "'";
                     }
                     else if (rNu.Checked == true)
                     {
-                        update = "Update Khachhang Set TenKH=N'" + txtHT.Text + "',Đc='" +
+                        update = "Update Khachhang Set TenKH=N'" + txtHT.Text + "',Đc=N'" +
                                 txtĐc.Text + "',NgaySinh='" +
                                 dtNS.Text + "',GioiTinh=N'" + rNu.Text +
                                 "',Sdt='" + txtSđt.Text + "',email='" + txtEmail.Text + "'where Sdt='" + txtSđt.Text + "'";
