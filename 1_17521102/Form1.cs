@@ -202,7 +202,7 @@ namespace _1_17521102
                     if (rNam.Checked == true)
                     {
                         insert = "Insert Into Khachhang(TenKH,Đc,Ngaysinh,Gioitinh,Sdt,Email)" +
-                                 "Values(N'" + txtHT.Text + "',N'" + txtĐc.Text + "','" +
+                                 "Values(N'" + txtHT.Text + "','"+ "'N'" + txtĐc.Text + "','" +
                                  dtNS.Text +
                                  "','" +
                                  rNam.Text + "','" + txtSđt.Text + "','" +
@@ -211,9 +211,9 @@ namespace _1_17521102
                     else if (rNu.Checked == true)
                     {
                         insert = "Insert Into Khachhang(TenKH,Đc,Ngaysinh,Gioitinh,Sdt,Email)" +
-                                 "Values(N'" + txtHT.Text + "',N'" + txtĐc.Text + "','" +
+                                 "Values(N'" + txtHT.Text + "','" + "'N'" + txtĐc.Text + "','" +
                                  dtNS.Text +
-                                 "',N'" + 
+                                 "','" + "'N'"+
                                  rNu.Text + "','" + txtSđt.Text + "','" +
                                  txtEmail.Text + "')";
                     }
