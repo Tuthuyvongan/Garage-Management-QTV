@@ -11,7 +11,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Windows.Forms.VisualStyles;
 using System.Text.RegularExpressions;
-using System.Globalization; 
+using System.Globalization;
+using System.IO;
 
 namespace _1_17521102
 {
@@ -358,6 +359,18 @@ namespace _1_17521102
             txtHT.SelectionStart = txtHT.Text.Length;
         }
 
-       
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dlr = MessageBox.Show("Bạn muốn thoát chương trình?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                Form2 frm2 = new Form2();
+                frm2.Visible = true;
+            }
+        }
     }
 }
