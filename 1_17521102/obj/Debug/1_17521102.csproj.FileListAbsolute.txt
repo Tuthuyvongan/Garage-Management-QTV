@@ -35,3 +35,13 @@ C:\Users\ADMIN\Desktop\1_17521102\1_17521102\obj\Debug\1_17521102.csproj.Generat
 C:\Users\ADMIN\Desktop\1_17521102\1_17521102\obj\Debug\1_17521102.exe
 C:\Users\ADMIN\Desktop\1_17521102\1_17521102\obj\Debug\1_17521102.pdb
 C:\Users\ADMIN\Desktop\1_17521102\1_17521102\obj\Debug\_1_17521102.Form2.resources
+C:\Users\ADMIN\Desktop\Đồ án cuối kì\1_17521102\1_17521102\bin\Debug\1_17521102.exe.config
+C:\Users\ADMIN\Desktop\Đồ án cuối kì\1_17521102\1_17521102\bin\Debug\1_17521102.exe
+C:\Users\ADMIN\Desktop\Đồ án cuối kì\1_17521102\1_17521102\bin\Debug\1_17521102.pdb
+C:\Users\ADMIN\Desktop\Đồ án cuối kì\1_17521102\1_17521102\obj\Debug\1_17521102.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Đồ án cuối kì\1_17521102\1_17521102\obj\Debug\_1_17521102.Form1.resources
+C:\Users\ADMIN\Desktop\Đồ án cuối kì\1_17521102\1_17521102\obj\Debug\_1_17521102.Form2.resources
+C:\Users\ADMIN\Desktop\Đồ án cuối kì\1_17521102\1_17521102\obj\Debug\_1_17521102.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\Đồ án cuối kì\1_17521102\1_17521102\obj\Debug\1_17521102.csproj.GenerateResource.Cache
+C:\Users\ADMIN\Desktop\Đồ án cuối kì\1_17521102\1_17521102\obj\Debug\1_17521102.exe
+C:\Users\ADMIN\Desktop\Đồ án cuối kì\1_17521102\1_17521102\obj\Debug\1_17521102.pdb
