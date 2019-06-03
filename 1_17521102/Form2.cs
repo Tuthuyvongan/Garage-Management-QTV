@@ -19,9 +19,7 @@ namespace _1_17521102
 
         private void traCứuXeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
-            frm.Show();
-            Visible = false;
+            
         }
 
         private void đóngỨngDụngToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,6 +38,13 @@ namespace _1_17521102
             {
                 e.Cancel = true;
             }
+        }
+
+        private void lậpPhiếuThuTiềnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
+            Visible = false;
         }
     }
 }
