@@ -50,6 +50,13 @@
             this.lbHT = new System.Windows.Forms.Label();
             this.grKH = new System.Windows.Forms.GroupBox();
             this.dataKhachhang = new System.Windows.Forms.DataGridView();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Bienso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sotienthu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngaythutien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
@@ -58,13 +65,6 @@
             this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bienso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sotienthu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngaythutien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grTTKH.SuspendLayout();
             this.grKH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataKhachhang)).BeginInit();
@@ -293,44 +293,6 @@
             this.dataKhachhang.TabIndex = 0;
             this.dataKhachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataKhachhang_CellContentClick);
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(352, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(462, 66);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "TRA CỨU XE";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // errorProvider2
-            // 
-            this.errorProvider2.ContainerControl = this;
-            // 
-            // errorProvider3
-            // 
-            this.errorProvider3.ContainerControl = this;
-            // 
-            // errorProvider5
-            // 
-            this.errorProvider5.ContainerControl = this;
-            // 
-            // errorProvider6
-            // 
-            this.errorProvider6.ContainerControl = this;
-            // 
-            // errorProvider4
-            // 
-            this.errorProvider4.ContainerControl = this;
-            // 
-            // errorProvider7
-            // 
-            this.errorProvider7.ContainerControl = this;
-            // 
             // TenKH
             // 
             this.TenKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -393,6 +355,44 @@
             this.Email.HeaderText = "Email";
             this.Email.Name = "Email";
             this.Email.ReadOnly = true;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(352, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(462, 66);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "PHIẾU THU TIỀN";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
+            // errorProvider3
+            // 
+            this.errorProvider3.ContainerControl = this;
+            // 
+            // errorProvider5
+            // 
+            this.errorProvider5.ContainerControl = this;
+            // 
+            // errorProvider6
+            // 
+            this.errorProvider6.ContainerControl = this;
+            // 
+            // errorProvider4
+            // 
+            this.errorProvider4.ContainerControl = this;
+            // 
+            // errorProvider7
+            // 
+            this.errorProvider7.ContainerControl = this;
             // 
             // Form1
             // 
