@@ -61,7 +61,11 @@ namespace _1_17521102
             }
             else if (txtBs.Text == "")
             {
-                errorProvider2.SetError(txtBs, "Địa chỉ không để trống!");
+                errorProvider2.SetError(txtBs, "Biển số xe không được để trống!");
+            }
+            else if (txtStt.Text == "")
+            {
+                errorProvider8.SetError(txtStt, "Số tiền thu không được để trống!");
             }
             else if (rNam.Checked == false && rNu.Checked == false)
             {
@@ -169,7 +173,11 @@ namespace _1_17521102
             }
             else if (txtBs.Text == "")
             {
-                errorProvider2.SetError(txtBs, "Địa chỉ không để trống!");
+                errorProvider2.SetError(txtBs, "Biển số xe không được để trống!");
+            }
+            else if (txtStt.Text == "")
+            {
+                errorProvider8.SetError(txtStt, "Số tiền thu không được để trống!");
             }
             else if (rNam.Checked == false && rNu.Checked == false)
             {
