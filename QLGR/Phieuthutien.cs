@@ -97,10 +97,10 @@ namespace _1_17521102
                 }
                 else if (rNu.Checked == true)
                 {
-                    insert = "Insert Into Khachhang(TenKH,Đc,Ngaysinh,Gioitinh,Sdt,Email,Sotienthu)" +
+                    insert = "Insert Into Khachhang(TenKH,Bienso,Ngaythutien,Gioitinh,Sdt,Email,Sotienthu)" +
                              "Values(N'" + txtHT.Text + "','" + txtBs.Text + "','" +
                              dtNtt.Text +
-                             "','" +
+                             "',N'" +
                              rNu.Text + "','" + txtSđt.Text + "','" +
                              txtEmail.Text + "','" + txtStt.Text + "')";
                 }
