@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _1_17521102
 {
-    public partial class Form2 : Form
+    public partial class MainMenu : Form
     {
-        public Form2()
+        public MainMenu()
         {
             InitializeComponent();
         }
@@ -42,7 +42,7 @@ namespace _1_17521102
 
         private void lậpPhiếuThuTiềnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
+            Phieuthutien frm = new Phieuthutien();
             frm.Show();
             Visible = false;
         }

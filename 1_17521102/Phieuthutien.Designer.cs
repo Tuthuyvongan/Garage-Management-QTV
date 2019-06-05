@@ -1,6 +1,6 @@
 ﻿namespace _1_17521102
 {
-    partial class Form1
+    partial class Phieuthutien
     {
         /// <summary>
         /// Required designer variable.
@@ -103,7 +103,7 @@
             this.grTTKH.Size = new System.Drawing.Size(1133, 191);
             this.grTTKH.TabIndex = 0;
             this.grTTKH.TabStop = false;
-            this.grTTKH.Text = "Thông tin khách hàng";
+            this.grTTKH.Text = "Thông tin phiếu thu tiền";
             // 
             // lbStt
             // 
@@ -394,7 +394,7 @@
             // 
             this.errorProvider7.ContainerControl = this;
             // 
-            // Form1
+            // Phieuthutien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -402,8 +402,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grKH);
             this.Controls.Add(this.grTTKH);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Phieuthutien";
+            this.Text = "Phieu thu tien";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grTTKH.ResumeLayout(false);

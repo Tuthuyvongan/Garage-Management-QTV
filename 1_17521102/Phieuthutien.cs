@@ -17,8 +17,9 @@ using System.IO;
 
 namespace _1_17521102
 {
-    public partial class Form1 : Form
+    public partial class Phieuthutien : Form
     {
+       
         public static string chuoiketnoi = ConfigurationManager.AppSettings["chuoiketnoi"];
         public static SqlConnection cnn;
         public static SqlCommand cmd;
@@ -38,7 +39,7 @@ namespace _1_17521102
             cmd = new SqlCommand(sql, cnn);
             cmd.ExecuteNonQuery();
         }
-        public Form1()
+        public Phieuthutien()
         {
             InitializeComponent();
         }
@@ -307,7 +308,7 @@ namespace _1_17521102
             }
             else
             {
-                Form2 frm2 = new Form2();
+                MainMenu frm2 = new MainMenu();
                 frm2.Visible = true;
             }
         }
@@ -316,5 +317,7 @@ namespace _1_17521102
         {
 
         }
+
+        
     }
 }

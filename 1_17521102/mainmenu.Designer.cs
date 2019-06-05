@@ -1,6 +1,6 @@
 ﻿namespace _1_17521102
 {
-    partial class Form2
+    partial class MainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -33,11 +33,12 @@
             this.đóngỨngDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.traCứuXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.khácToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danhSáchXeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.traCứuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lậpPhiếuThuTiềnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lậpBáoCáoThángToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phiếuSửaChữaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.khácToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +78,8 @@
             this.danhSáchXeToolStripMenuItem,
             this.traCứuToolStripMenuItem,
             this.lậpPhiếuThuTiềnToolStripMenuItem,
-            this.lậpBáoCáoThángToolStripMenuItem});
+            this.lậpBáoCáoThángToolStripMenuItem,
+            this.phiếuSửaChữaToolStripMenuItem});
             this.quảnLýToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quảnLýToolStripMenuItem.Name = "quảnLýToolStripMenuItem";
             this.quảnLýToolStripMenuItem.Size = new System.Drawing.Size(86, 27);
@@ -89,13 +91,6 @@
             this.traCứuXeToolStripMenuItem.Size = new System.Drawing.Size(260, 28);
             this.traCứuXeToolStripMenuItem.Text = "Danh sách khách hàng";
             this.traCứuXeToolStripMenuItem.Click += new System.EventHandler(this.traCứuXeToolStripMenuItem_Click);
-            // 
-            // khácToolStripMenuItem
-            // 
-            this.khácToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.khácToolStripMenuItem.Name = "khácToolStripMenuItem";
-            this.khácToolStripMenuItem.Size = new System.Drawing.Size(59, 27);
-            this.khácToolStripMenuItem.Text = "Khác";
             // 
             // danhSáchXeToolStripMenuItem
             // 
@@ -122,15 +117,28 @@
             this.lậpBáoCáoThángToolStripMenuItem.Size = new System.Drawing.Size(260, 28);
             this.lậpBáoCáoThángToolStripMenuItem.Text = "Lập báo cáo tháng";
             // 
-            // Form2
+            // phiếuSửaChữaToolStripMenuItem
+            // 
+            this.phiếuSửaChữaToolStripMenuItem.Name = "phiếuSửaChữaToolStripMenuItem";
+            this.phiếuSửaChữaToolStripMenuItem.Size = new System.Drawing.Size(260, 28);
+            this.phiếuSửaChữaToolStripMenuItem.Text = "Phiếu sửa chữa";
+            // 
+            // khácToolStripMenuItem
+            // 
+            this.khácToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.khácToolStripMenuItem.Name = "khácToolStripMenuItem";
+            this.khácToolStripMenuItem.Size = new System.Drawing.Size(59, 27);
+            this.khácToolStripMenuItem.Text = "Khác";
+            // 
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 537);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "MainMenu";
+            this.Text = "Menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -151,5 +159,6 @@
         private System.Windows.Forms.ToolStripMenuItem traCứuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lậpPhiếuThuTiềnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lậpBáoCáoThángToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phiếuSửaChữaToolStripMenuItem;
     }
 }
