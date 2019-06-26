@@ -96,3 +96,14 @@ create table BaoCaoDoanhSo
 	foreign key(MaPhieuSuaChua) references dbo.PhieuSuaChua(MaPhieuSuaChua),
 )
 go
+
+create table NguoiDung
+(
+	TenDangNhap nvarchar(100) primary key,
+	TenHienThi nvarchar(100) not null default N'User',	
+	PassWord nvarchar(1000) not null default 0,
+	Type int not null default 0 --1: admin	&& 0: staff
+)
+go
+
+insert into dbo.NguoiDung values ('admin','GaraQTV','1',1)
