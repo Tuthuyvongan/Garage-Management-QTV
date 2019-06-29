@@ -1,0 +1,17 @@
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\obj\Debug\Test.LapPhieuThuTien.resources
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\obj\Debug\Test.Properties.Resources.resources
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\obj\Debug\Test.exe
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\obj\Debug\Test.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\bin\Debug\Test.exe.config
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\bin\Debug\Test.exe
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\bin\Debug\Test.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\bin\Debug\BUS.dll
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\bin\Debug\DTO.dll
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\bin\Debug\DAO.dll
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\bin\Debug\BUS.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\bin\Debug\DTO.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\bin\Debug\DAO.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\Test\obj\Debug\GUI.csproj.CopyComplete

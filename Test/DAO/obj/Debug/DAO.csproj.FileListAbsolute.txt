@@ -1,0 +1,9 @@
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\DAO\bin\Debug\DAO.dll
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\DAO\bin\Debug\DAO.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\DAO\bin\Debug\DTO.dll
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\DAO\bin\Debug\DTO.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\DAO\obj\Debug\DAO.dll
+C:\Users\ADMIN\Documents\Visual Studio 2017\Projects\Test\DAO\obj\Debug\DAO.pdb
