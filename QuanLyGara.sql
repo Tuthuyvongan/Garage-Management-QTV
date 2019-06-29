@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+﻿<<<<<<< HEAD
 ﻿create database QuanLyGaRa
 go
 
@@ -144,8 +144,8 @@ go
 create table PhieuThuTien
 (
 	MaPhieuThuTien int primary key,
-	NgayLapPhieu date not null default getdate(),
-	SoTienThu float not null default 0,
+	ngaythutien date not null default getdate(),
+	sotienthu float not null default 0,
 	MaChuXe int not null,
 	MaXe int not null,
 

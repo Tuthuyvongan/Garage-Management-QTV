@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QLGR.DAO
+namespace QLGR.DTO
 {
     class SuaChua
     {
