@@ -42,11 +42,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.quanLyGaraDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyGaraDataSet = new QLGR.QuanLyGaraDataSet();
+          
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyGaraDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyGaraDataSet)).BeginInit();
+            
             this.SuspendLayout();
             // 
             // panel1
@@ -169,13 +167,11 @@
             // 
             // quanLyGaraDataSetBindingSource
             // 
-            this.quanLyGaraDataSetBindingSource.DataSource = this.quanLyGaraDataSet;
-            this.quanLyGaraDataSetBindingSource.Position = 0;
+          
             // 
             // quanLyGaraDataSet
             // 
-            this.quanLyGaraDataSet.DataSetName = "QuanLyGaraDataSet";
-            this.quanLyGaraDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+          
             // 
             // ThongTinNguoiDung
             // 
@@ -208,7 +204,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.BindingSource quanLyGaraDataSetBindingSource;
-        private QuanLyGaraDataSet quanLyGaraDataSet;
-    }
+      
 }
