@@ -205,7 +205,7 @@ namespace Test
                 tt.Email = txtEmail.Text;
                 tt.Sdt = txtSdt.Text;
                 tt.Bienso = txtBienso.Text;
-                bool kq1 = ttBus.them(tt);
+                bool kq1 = ttBus.sua(tt);
                 if (kq1 == false)
                     MessageBox.Show("Sửa thông tin thất bại. Vui lòng kiểm tra lại dữ liệu");
                 else
