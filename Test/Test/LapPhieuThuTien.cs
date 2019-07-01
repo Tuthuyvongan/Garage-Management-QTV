@@ -75,6 +75,8 @@ namespace Test
             clngaythutien.DataPropertyName = "ngaythutien";
             clngaythutien.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dataLPTT.Columns.Add(clngaythutien);
+            dtNgaythutien.Format = DateTimePickerFormat.Custom;
+            dtNgaythutien.CustomFormat = "dd/MM/yyyy";
 
             DataGridViewTextBoxColumn clsdt = new DataGridViewTextBoxColumn();
             clsdt.Name = "sdt";
@@ -243,7 +245,7 @@ namespace Test
             txtHT.Text = dataLPTT.Rows[t].Cells[1].Value.ToString();
             txtBienso.Text = dataLPTT.Rows[t].Cells[2].Value.ToString();
             txtSotienthu.Text = dataLPTT.Rows[t].Cells[3].Value.ToString();
-            //dtNgaythutien.Value = Convert.ToDateTime(dataLPTT.SelectedRows[t].Cells[4].Value);
+            dtNgaythutien.Text = dataLPTT.Rows[t].Cells[4].Value.ToString();
             txtSdt.Text = dataLPTT.Rows[t].Cells[5].Value.ToString();
             txtEmail.Text = dataLPTT.Rows[t].Cells[6].Value.ToString();          
         }
@@ -272,12 +274,16 @@ namespace Test
 
         private void LapPhieuThuTien_Load(object sender, EventArgs e)
         {
-            ttBus = new ThuTienBUS();
+            dtNgaythutien.Format = DateTimePickerFormat.Custom;
+            dtNgaythutien.CustomFormat = "dd/MM/yyyy";
+            ttBus = new ThuTienBUS();            
         }
 
         private void load_Click(object sender, EventArgs e)
         {
             this.loadData_Vao_GridView();
         }
+
+       
     }
 }

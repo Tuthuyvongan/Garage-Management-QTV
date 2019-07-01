@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.grTTKH = new System.Windows.Forms.GroupBox();
+            this.load = new System.Windows.Forms.Button();
             this.lbStt = new System.Windows.Forms.Label();
             this.txtSotienthu = new System.Windows.Forms.TextBox();
             this.dtNgaythutien = new System.Windows.Forms.DateTimePicker();
@@ -57,7 +58,6 @@
             this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.load = new System.Windows.Forms.Button();
             this.grTTKH.SuspendLayout();
             this.grLPTT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLPTT)).BeginInit();
@@ -122,6 +122,16 @@
             this.grTTKH.TabStop = false;
             this.grTTKH.Text = "Thông tin phiếu thu tiền";
             // 
+            // load
+            // 
+            this.load.Location = new System.Drawing.Point(870, 146);
+            this.load.Name = "load";
+            this.load.Size = new System.Drawing.Size(80, 39);
+            this.load.TabIndex = 25;
+            this.load.Text = "Load";
+            this.load.UseVisualStyleBackColor = true;
+            this.load.Click += new System.EventHandler(this.load_Click);
+            // 
             // lbStt
             // 
             this.lbStt.Location = new System.Drawing.Point(586, 106);
@@ -149,7 +159,7 @@
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(270, 146);
+            this.btThem.Location = new System.Drawing.Point(189, 146);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(80, 39);
             this.btThem.TabIndex = 20;
@@ -159,7 +169,7 @@
             // 
             // btSua
             // 
-            this.btSua.Location = new System.Drawing.Point(471, 146);
+            this.btSua.Location = new System.Drawing.Point(409, 146);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(80, 39);
             this.btSua.TabIndex = 19;
@@ -169,7 +179,7 @@
             // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(690, 146);
+            this.btXoa.Location = new System.Drawing.Point(638, 146);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(80, 39);
             this.btXoa.TabIndex = 18;
@@ -298,16 +308,6 @@
             // errorProvider7
             // 
             this.errorProvider7.ContainerControl = this;
-            // 
-            // load
-            // 
-            this.load.Location = new System.Drawing.Point(903, 146);
-            this.load.Name = "load";
-            this.load.Size = new System.Drawing.Size(80, 39);
-            this.load.TabIndex = 25;
-            this.load.Text = "Load";
-            this.load.UseVisualStyleBackColor = true;
-            this.load.Click += new System.EventHandler(this.load_Click);
             // 
             // LapPhieuThuTien
             // 
