@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Configuration;
+
 
 namespace DAO
 {
@@ -27,8 +27,8 @@ namespace DAO
         public bool them(ThuTienDTO tt)
         {
             string query = string.Empty;
-            query += "INSERT INTO [PhieuSuaChua] ([ht], [bienso], [sdt], [ngaythutien], [sotienthu], [email], [id])";
-            query += "VALUES (@ten,@bienso,@sdt,@ngaythutien,@sotienthu,@email,@id)";
+            query += "INSERT INTO [PhieuThuTien] (ht, bienso, sdt, ngaythutien, sotienthu, email, id)";
+            query += "VALUES (@ht,@bienso,@sdt,@ngaythutien,@sotienthu,@email,@id)";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -37,7 +37,7 @@ namespace DAO
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@ten", tt.HT);
+                    cmd.Parameters.AddWithValue("@ht", tt.HT);
                     cmd.Parameters.AddWithValue("@bienso", tt.Bienso);
                     cmd.Parameters.AddWithValue("@sdt", tt.Sdt);
                     cmd.Parameters.AddWithValue("@ngaythutien", tt.Ngaythutien);
@@ -54,7 +54,8 @@ namespace DAO
                     catch (Exception ex)
                     {
                         con.Close();
-                        return false;
+                        Console.WriteLine(ex);
+                        throw;
                     }
                 }
             }
@@ -63,7 +64,7 @@ namespace DAO
         public bool xoa(ThuTienDTO tt)
         {
             string query = string.Empty;
-            query += "DELETE FROM PhieuSuaChua WHERE [id] = @id"; ;
+            query += "DELETE FROM PhieuThuTien WHERE [id] = @id"; ;
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -83,7 +84,8 @@ namespace DAO
                     catch (Exception ex)
                     {
                         con.Close();
-                        return false;
+                        Console.WriteLine(ex);
+                        throw;
                     }
                 }
             }
@@ -92,7 +94,7 @@ namespace DAO
         public bool sua(ThuTienDTO tt)
         {
             string query = string.Empty;
-            query += "UPDATE PhieuSuaChua SET [ht] = @ten, [bienso] = @bienso, [sdt] = @sdt, [ngaythutien] = @ngaythutien, [sotienthu] = @sotienthu, [email] = @email WHERE [id] = @id";
+            query += "UPDATE PhieuThuTien SET [ht] = @ht, [bienso] = @bienso, [sdt] = @sdt, [ngaythutien] = @ngaythutien, [sotienthu] = @sotienthu, [email] = @email WHERE [id] = @id";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -101,7 +103,7 @@ namespace DAO
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@ten", tt.HT);
+                    cmd.Parameters.AddWithValue("@ht", tt.HT);
                     cmd.Parameters.AddWithValue("@bienso", tt.Bienso);
                     cmd.Parameters.AddWithValue("@sdt", tt.Sdt);
                     cmd.Parameters.AddWithValue("@ngaythutien", tt.Ngaythutien);
@@ -118,7 +120,8 @@ namespace DAO
                     catch (Exception ex)
                     {
                         con.Close();
-                        return false;
+                        Console.WriteLine(ex);
+                        throw;
                     }
                 }
             }
@@ -128,7 +131,7 @@ namespace DAO
         {
             string query = string.Empty;
             query += "SELECT [ht], [bienso], [sdt], [ngaythutien], [sotienthu], [email], [id]";
-            query += "FROM [PhieuSuaChua]";
+            query += "FROM [PhieuThuTien]";
 
             List<ThuTienDTO> lsThuTien = new List<ThuTienDTO>();
 
@@ -155,7 +158,7 @@ namespace DAO
                                 tt.Bienso = reader["bienso"].ToString();
                                 tt.Sdt = reader["sdt"].ToString();
                                 tt.Ngaythutien = reader["ngaythutien"].ToString();
-                                tt.Sotienthu = float.Parse(reader["sotienthu"].ToString());
+                                tt.Sotienthu = Decimal.Parse(reader["sotienthu"].ToString());
                                 tt.Email = reader["email"].ToString();
                                 tt.ID = int.Parse(reader["id"].ToString());
                                 lsThuTien.Add(tt);
@@ -168,7 +171,8 @@ namespace DAO
                     catch (Exception ex)
                     {
                         con.Close();
-                        return null;
+                        Console.WriteLine(ex);
+                        throw;
                     }
                 }
             }

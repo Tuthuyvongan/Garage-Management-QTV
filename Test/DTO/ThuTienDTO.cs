@@ -34,7 +34,7 @@ namespace DTO
             set { ngaythutien = value; }
         }
 
-        public float Sotienthu
+        public Decimal Sotienthu
         {
             get { return sotienthu; }
             set { sotienthu = value; }
@@ -55,7 +55,7 @@ namespace DTO
         private string ht;
         private string bienso;
         private string ngaythutien;
-        private float sotienthu;
+        private Decimal sotienthu;
         private string email;
     }
 }

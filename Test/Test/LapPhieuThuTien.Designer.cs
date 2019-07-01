@@ -48,14 +48,8 @@
             this.lbNtt = new System.Windows.Forms.Label();
             this.lbBs = new System.Windows.Forms.Label();
             this.lbHT = new System.Windows.Forms.Label();
-            this.grKH = new System.Windows.Forms.GroupBox();
+            this.grLPTT = new System.Windows.Forms.GroupBox();
             this.dataLPTT = new System.Windows.Forms.DataGridView();
-            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bienso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sotienthu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngaythutien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
@@ -63,8 +57,9 @@
             this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.load = new System.Windows.Forms.Button();
             this.grTTKH.SuspendLayout();
-            this.grKH.SuspendLayout();
+            this.grLPTT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLPTT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
@@ -103,6 +98,7 @@
             // 
             // grTTKH
             // 
+            this.grTTKH.Controls.Add(this.load);
             this.grTTKH.Controls.Add(this.lbStt);
             this.grTTKH.Controls.Add(this.txtSotienthu);
             this.grTTKH.Controls.Add(this.dtNgaythutien);
@@ -194,6 +190,7 @@
             this.txtSdt.Name = "txtSdt";
             this.txtSdt.Size = new System.Drawing.Size(423, 27);
             this.txtSdt.TabIndex = 11;
+            this.txtSdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSdt_KeyPress);
             // 
             // txtBienso
             // 
@@ -208,6 +205,7 @@
             this.txtHT.Name = "txtHT";
             this.txtHT.Size = new System.Drawing.Size(423, 27);
             this.txtHT.TabIndex = 7;
+            this.txtHT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHT_KeyPress);
             // 
             // lbEmail
             // 
@@ -249,28 +247,21 @@
             this.lbHT.TabIndex = 0;
             this.lbHT.Text = "Họ tên chủ xe";
             // 
-            // grKH
+            // grLPTT
             // 
-            this.grKH.Controls.Add(this.dataLPTT);
-            this.grKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grKH.Location = new System.Drawing.Point(11, 279);
-            this.grKH.Name = "grKH";
-            this.grKH.Size = new System.Drawing.Size(1136, 286);
-            this.grKH.TabIndex = 12;
-            this.grKH.TabStop = false;
-            this.grKH.Text = "Danh sách khách hàng";
+            this.grLPTT.Controls.Add(this.dataLPTT);
+            this.grLPTT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grLPTT.Location = new System.Drawing.Point(11, 279);
+            this.grLPTT.Name = "grLPTT";
+            this.grLPTT.Size = new System.Drawing.Size(1136, 286);
+            this.grLPTT.TabIndex = 12;
+            this.grLPTT.TabStop = false;
+            this.grLPTT.Text = "Danh sách khách hàng";
             // 
             // dataLPTT
             // 
             this.dataLPTT.AllowUserToAddRows = false;
             this.dataLPTT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataLPTT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.TenKH,
-            this.Bienso,
-            this.Sotienthu,
-            this.Ngaythutien,
-            this.Sdt,
-            this.Email});
             this.dataLPTT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLPTT.Location = new System.Drawing.Point(3, 23);
             this.dataLPTT.Name = "dataLPTT";
@@ -278,60 +269,7 @@
             this.dataLPTT.RowTemplate.Height = 24;
             this.dataLPTT.Size = new System.Drawing.Size(1130, 260);
             this.dataLPTT.TabIndex = 0;
-            // 
-            // TenKH
-            // 
-            this.TenKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenKH.DataPropertyName = "TenKH";
-            this.TenKH.FillWeight = 106.4433F;
-            this.TenKH.HeaderText = "Họ tên chủ xe";
-            this.TenKH.Name = "TenKH";
-            this.TenKH.ReadOnly = true;
-            // 
-            // Bienso
-            // 
-            this.Bienso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Bienso.DataPropertyName = "Bienso";
-            this.Bienso.FillWeight = 101.4433F;
-            this.Bienso.HeaderText = "Biển số";
-            this.Bienso.Name = "Bienso";
-            this.Bienso.ReadOnly = true;
-            // 
-            // Sotienthu
-            // 
-            this.Sotienthu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Sotienthu.DataPropertyName = "Sotienthu";
-            this.Sotienthu.HeaderText = "Số tiền thu";
-            this.Sotienthu.Name = "Sotienthu";
-            this.Sotienthu.ReadOnly = true;
-            // 
-            // Ngaythutien
-            // 
-            this.Ngaythutien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Ngaythutien.DataPropertyName = "Ngaythutien";
-            this.Ngaythutien.FillWeight = 101.4433F;
-            this.Ngaythutien.HeaderText = "Ngày thu tiền";
-            this.Ngaythutien.Name = "Ngaythutien";
-            this.Ngaythutien.ReadOnly = true;
-            this.Ngaythutien.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Sdt
-            // 
-            this.Sdt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Sdt.DataPropertyName = "Sdt";
-            this.Sdt.FillWeight = 101.4433F;
-            this.Sdt.HeaderText = "Điện thoại";
-            this.Sdt.Name = "Sdt";
-            this.Sdt.ReadOnly = true;
-            // 
-            // Email
-            // 
-            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Email.DataPropertyName = "Email";
-            this.Email.FillWeight = 101.4433F;
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
+            this.dataLPTT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataLPTT_CellContentClick);
             // 
             // errorProvider1
             // 
@@ -361,12 +299,22 @@
             // 
             this.errorProvider7.ContainerControl = this;
             // 
+            // load
+            // 
+            this.load.Location = new System.Drawing.Point(903, 146);
+            this.load.Name = "load";
+            this.load.Size = new System.Drawing.Size(80, 39);
+            this.load.TabIndex = 25;
+            this.load.Text = "Load";
+            this.load.UseVisualStyleBackColor = true;
+            this.load.Click += new System.EventHandler(this.load_Click);
+            // 
             // LapPhieuThuTien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1161, 577);
-            this.Controls.Add(this.grKH);
+            this.Controls.Add(this.grLPTT);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -376,7 +324,7 @@
             this.Load += new System.EventHandler(this.LapPhieuThuTien_Load);
             this.grTTKH.ResumeLayout(false);
             this.grTTKH.PerformLayout();
-            this.grKH.ResumeLayout(false);
+            this.grLPTT.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataLPTT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
@@ -411,14 +359,8 @@
         private System.Windows.Forms.Label lbNtt;
         private System.Windows.Forms.Label lbBs;
         private System.Windows.Forms.Label lbHT;
-        private System.Windows.Forms.GroupBox grKH;
+        private System.Windows.Forms.GroupBox grLPTT;
         private System.Windows.Forms.DataGridView dataLPTT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Bienso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sotienthu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ngaythutien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sdt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.ErrorProvider errorProvider3;
@@ -426,6 +368,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider5;
         private System.Windows.Forms.ErrorProvider errorProvider6;
         private System.Windows.Forms.ErrorProvider errorProvider7;
+        private System.Windows.Forms.Button load;
     }
 }
 
