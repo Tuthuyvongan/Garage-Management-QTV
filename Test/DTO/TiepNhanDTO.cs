@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace LapPhieuThuTienDTO
+namespace LapPhieuTiepNhanDTO
 {
-    public class ThuTienDTO
+    public class TiepNhanDTO
     {
         public string Sdt
         {
@@ -28,34 +26,32 @@ namespace LapPhieuThuTienDTO
             set { bienso = value; }
         }
 
-        public string Ngaythutien
+        public string Ngaytiepnhan
         {
-            get { return ngaythutien; }
-            set { ngaythutien = value; }
+            get { return ngaytiepnhan; }
+            set { ngaytiepnhan = value; }
         }
-
-        public Decimal Sotienthu
+        public string DiaChi
         {
-            get { return sotienthu; }
-            set { sotienthu = value; }
+            get { return diachi; }
+            set { diachi = value; }
         }
-
-        public string Email
+        public string HieuXe
         {
-            get { return email; }
-            set { email = value; }
+            get { return hieuxe; }
+            set { hieuxe = value; }
         }
-        public int ID
+        public int MaTiepNhan
         {
-            get { return id; }
-            set { id = value; }
+            get { return matiepnhan; }
+            set { matiepnhan = value; }
         }
-        private int id;
+        private int matiepnhan;
         private string sdt;
         private string ht;
         private string bienso;
-        private string ngaythutien;
-        private Decimal sotienthu;
-        private string email;
+        private string ngaytiepnhan;        
+        private string hieuxe;
+        private string diachi;
     }
 }

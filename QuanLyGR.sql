@@ -39,23 +39,22 @@ create table PhieuThuTien
     bienso nvarchar (100),
     ht nvarchar(100) not null default N'Trống',
     sdt int not null default 0,
-	MaChuXe int not null,
-	MaXe int not null,
     email nvarchar(100) not null default N'Trống',
 
 
-	foreign key (MaXe) references dbo.Xe(MaXe),
-	foreign key (MaChuXe) references dbo.ChuXe(MaChuXe),
+	
 )
 go
 
-create table PhieuTiepNhanBaoTri
+create table PhieuTiepNhan
 (
-	MaPhieuTiepNhanBaoTri int primary key,
-	MaXe int not null,
-	NgayLapPhieu date not null default getdate(),
-
-	foreign key (MaXe) references dbo.Xe(MaXe),
+	matiepnhan int primary key,
+	ngaytiepnhan date not null default getdate(),
+	bienso nvarchar (100),
+    ht nvarchar(100) not null default N'Trống',
+    sdt int not null default 0,
+	diachi nvarchar(100) not null default N'Trống',
+	hieuxe nvarchar (100),
 )
 go
 

@@ -1,5 +1,5 @@
-﻿using BUS;
-using DTO;
+﻿using LapPhieuThuTienBUS;
+using LapPhieuThuTienDTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -156,6 +156,7 @@ namespace Test
                 txtHT.Text = "";
                 txtSdt.Text = "";
                 txtSotienthu.Text= "";
+                txtID.Text = "";
             }
         }
 
@@ -235,6 +236,7 @@ namespace Test
                 txtHT.Text = "";
                 txtSdt.Text = "";
                 txtSotienthu.Text = "";
+                txtID.Text = "";
             }
         }
 
