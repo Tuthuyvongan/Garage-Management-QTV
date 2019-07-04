@@ -49,13 +49,13 @@ namespace Test
         {            
             PhuTungDTO pt = new PhuTungDTO();
             ptBus = new PhuTungBUS();
-            List<PhuTungDTO> ListPhuTung = ptBus.select();
-            if (ListPhuTung == null)
+            List<PhuTungDTO> ListTenPhuTung = ptBus.selectTenPhuTung();
+            if (ListTenPhuTung == null)
             {
                 MessageBox.Show("Có lỗi khi lấy thông tin từ table PhuTung");
                 return;
             }
-            cbPhuTung.DataSource = ListPhuTung;
+            cbPhuTung.DataSource = ListTenPhuTung;
         }
 
         private void btLayGia_Click(object sender, EventArgs e)

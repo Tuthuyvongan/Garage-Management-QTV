@@ -22,13 +22,112 @@ namespace TenPhuTungDAO
         {
             connectionString = ConfigurationManager.AppSettings["ConnectionString"];
         }
+        public bool them(PhuTungDTO tt)
+        {
+            string query = string.Empty;
+            query += "INSERT INTO [PhuTung] (tenphutung,maphutung,dongia,tondau,toncuoi) ";
+            query += "VALUES (@tenphutung,@maphutung,@dongia,@tondau,@toncuoi)";
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@tenphutung", tt.Tenphutung);
+                    cmd.Parameters.AddWithValue("@maphutung", tt.Maphutung);
+                    cmd.Parameters.AddWithValue("@dongia", tt.Dongia);
+                    cmd.Parameters.AddWithValue("@tondau", tt.Tondau);
+                    cmd.Parameters.AddWithValue("@toncuoi", tt.Toncuoi);
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        Console.WriteLine(ex);
+                        throw;
+                    }
+                }
+            }
+            return true;
+        }
+        public bool xoa(PhuTungDTO tt)
+        {
+            string query = string.Empty;
+            query += "DELETE FROM PhuTung WHERE [maphutung] = @maphutung"; ;
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@maphutung", tt.Maphutung);
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        Console.WriteLine(ex);
+                        throw;
+                    }
+                }
+            }
+            return true;
+        }
+        public bool sua(PhuTungDTO tt)
+        {
+            string query = string.Empty;
+            query += "UPDATE PhuTung SET [tenphutung] = @tenphutung, [dongia] = @dongia, [tondau] = @tondau, [toncuoi] = @toncuoi  WHERE [maphutung] = @maphutung";
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@tenphutung", tt.Tenphutung);
+                    cmd.Parameters.AddWithValue("@maphutung", tt.Maphutung);
+                    cmd.Parameters.AddWithValue("@dongia", tt.Dongia);
+                    cmd.Parameters.AddWithValue("@tondau", tt.Tondau);
+                    cmd.Parameters.AddWithValue("@toncuoi", tt.Toncuoi);
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        Console.WriteLine(ex);
+                        throw;
+                    }
+                }
+            }
+            return true;
+        }
         public List<PhuTungDTO> select()
         {
             string query = string.Empty;
-            query += "SELECT [tenphutung]";
+            query += "SELECT [tenphutung], [dongia], [tondau], [toncuoi], [maphutung]";
             query += "FROM [PhuTung]";
 
-            List<PhuTungDTO> lsPhuTung = new List<PhuTungDTO>();
+            List<PhuTungDTO> lsTenPhuTung = new List<PhuTungDTO>();
 
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
@@ -50,7 +149,11 @@ namespace TenPhuTungDAO
                             {
                                 PhuTungDTO pt = new PhuTungDTO();
                                 pt.Tenphutung = reader["tenphutung"].ToString();
-                                lsPhuTung.Add(pt);
+                                pt.Maphutung = int.Parse(reader["maphutung"].ToString());
+                                pt.Toncuoi = int.Parse(reader["toncuoi"].ToString());
+                                pt.Tondau = int.Parse(reader["tondau"].ToString());
+                                pt.Dongia = Decimal.Parse(reader["dongia"].ToString());
+                                lsTenPhuTung.Add(pt);
                             }
                         }
 
@@ -65,7 +168,106 @@ namespace TenPhuTungDAO
                     }
                 }
             }
-            return lsPhuTung;
+            return lsTenPhuTung;
+        }
+        public List<PhuTungDTO> selectTenPhuTung()
+        {
+            string query = string.Empty;
+            query += "SELECT [tenphutung]";
+            query += "FROM [PhuTung]";
+
+            List<PhuTungDTO> lsTenPhuTung = new List<PhuTungDTO>();
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+
+                    try
+                    {
+                        con.Open();
+                        SqlDataReader reader = null;
+                        reader = cmd.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                PhuTungDTO pt = new PhuTungDTO();
+                                pt.Tenphutung = reader["tenphutung"].ToString();
+                                lsTenPhuTung.Add(pt);
+                            }
+                        }
+
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        Console.WriteLine(ex);
+                        throw;
+                    }
+                }
+            }
+            return lsTenPhuTung;
+        }
+        public List<PhuTungDTO> TimKiem(string Keyword)
+        {
+            string query = string.Empty;
+            query += "SELECT [tenphutung], [dongia], [tondau], [toncuoi], [maphutung]";
+            query += "FROM [PhuTung]";
+            query += " WHERE ([tenphutung] LIKE CONCAT('%',@Keyword,'%'))";
+            query += " OR ([maphutung] LIKE CONCAT('%',@Keyword,'%'))";
+            query += " OR ([dongia] LIKE CONCAT('%',@Keyword,'%'))";
+            query += " OR ([tondau] LIKE CONCAT('%',@Keyword,'%'))";
+            query += " OR ([toncuoi] LIKE CONCAT('%',@Keyword,'%'))";
+
+            List<PhuTungDTO> lsTimKiem = new List<PhuTungDTO>();
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@Keyword", Keyword);
+                    try
+                    {
+                        con.Open();
+                        SqlDataReader reader = null;
+                        reader = cmd.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                PhuTungDTO pt = new PhuTungDTO();
+                                pt.Tenphutung = reader["tenphutung"].ToString();
+                                pt.Maphutung = int.Parse(reader["maphutung"].ToString());
+                                pt.Toncuoi = int.Parse(reader["toncuoi"].ToString());
+                                pt.Tondau = int.Parse(reader["tondau"].ToString());
+                                pt.Dongia = Decimal.Parse(reader["dongia"].ToString());
+                                lsTimKiem.Add(pt);
+                            }
+                        }
+
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        Console.WriteLine(ex);
+                        throw;
+                    }
+                }
+            }
+            return lsTimKiem;
         }
         public List<PhuTungDTO> selectgia(string sKeyword)
         {

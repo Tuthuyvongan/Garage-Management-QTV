@@ -73,6 +73,12 @@
     <Compile Include="QuanLyHieuXe.Designer.cs">
       <DependentUpon>QuanLyHieuXe.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyPhuTung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyPhuTung.Designer.cs">
+      <DependentUpon>QuanLyPhuTung.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="LapPhieuSuaChua.resx">
       <DependentUpon>LapPhieuSuaChua.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLyHieuXe.resx">
       <DependentUpon>QuanLyHieuXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyPhuTung.resx">
+      <DependentUpon>QuanLyPhuTung.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

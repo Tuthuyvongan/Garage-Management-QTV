@@ -202,7 +202,13 @@ namespace Test
                     MessageBox.Show("Sửa thông tin thất bại. Vui lòng kiểm tra lại dữ liệu");
                 else
                     MessageBox.Show("Sửa thông tin thành công");
-                this.loadData_Vao_GridView();               
+                this.loadData_Vao_GridView();
+                txtBienso.Text = "";
+                txtDiaChi.Text = "";
+                txtHT.Text = "";
+                txtSdt.Text = "";
+                cbTenHieuXe.Text = "";
+                txtMaPTN.Text = "";
             }
         }
 
