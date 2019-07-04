@@ -37,14 +37,12 @@
             this.grTTKH = new System.Windows.Forms.GroupBox();
             this.load = new System.Windows.Forms.Button();
             this.lbHx = new System.Windows.Forms.Label();
-            this.txtTenHieuXe = new System.Windows.Forms.TextBox();
             this.dtNgaytiepnhan = new System.Windows.Forms.DateTimePicker();
             this.btThem = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtSdt = new System.Windows.Forms.TextBox();
-            this.txtBienso = new System.Windows.Forms.TextBox();
             this.txtHT = new System.Windows.Forms.TextBox();
             this.lbĐiaChi = new System.Windows.Forms.Label();
             this.lbĐT = new System.Windows.Forms.Label();
@@ -58,6 +56,8 @@
             this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtBienso = new System.Windows.Forms.TextBox();
+            this.cbTenHieuXe = new System.Windows.Forms.ComboBox();
             this.grLPTT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLPTN)).BeginInit();
             this.grTTKH.SuspendLayout();
@@ -122,9 +122,9 @@
             // 
             // grTTKH
             // 
+            this.grTTKH.Controls.Add(this.cbTenHieuXe);
             this.grTTKH.Controls.Add(this.load);
             this.grTTKH.Controls.Add(this.lbHx);
-            this.grTTKH.Controls.Add(this.txtTenHieuXe);
             this.grTTKH.Controls.Add(this.dtNgaytiepnhan);
             this.grTTKH.Controls.Add(this.btThem);
             this.grTTKH.Controls.Add(this.btSua);
@@ -163,13 +163,6 @@
             this.lbHx.Size = new System.Drawing.Size(98, 24);
             this.lbHx.TabIndex = 24;
             this.lbHx.Text = "Hiệu Xe";
-            // 
-            // txtTenHieuXe
-            // 
-            this.txtTenHieuXe.Location = new System.Drawing.Point(690, 98);
-            this.txtTenHieuXe.Name = "txtTenHieuXe";
-            this.txtTenHieuXe.Size = new System.Drawing.Size(423, 27);
-            this.txtTenHieuXe.TabIndex = 23;
             // 
             // dtNgaytiepnhan
             // 
@@ -225,13 +218,6 @@
             this.txtSdt.Size = new System.Drawing.Size(423, 27);
             this.txtSdt.TabIndex = 11;
             this.txtSdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSdt_KeyPress);
-            // 
-            // txtBienso
-            // 
-            this.txtBienso.Location = new System.Drawing.Point(690, 32);
-            this.txtBienso.Name = "txtBienso";
-            this.txtBienso.Size = new System.Drawing.Size(423, 27);
-            this.txtBienso.TabIndex = 8;
             // 
             // txtHT
             // 
@@ -309,6 +295,23 @@
             // 
             this.errorProvider7.ContainerControl = this;
             // 
+            // txtBienso
+            // 
+            this.txtBienso.Location = new System.Drawing.Point(690, 32);
+            this.txtBienso.Name = "txtBienso";
+            this.txtBienso.Size = new System.Drawing.Size(423, 27);
+            this.txtBienso.TabIndex = 8;
+            // 
+            // cbTenHieuXe
+            // 
+            this.cbTenHieuXe.DisplayMember = "hieuxe";
+            this.cbTenHieuXe.FormattingEnabled = true;
+            this.cbTenHieuXe.Location = new System.Drawing.Point(690, 100);
+            this.cbTenHieuXe.Name = "cbTenHieuXe";
+            this.cbTenHieuXe.Size = new System.Drawing.Size(423, 28);
+            this.cbTenHieuXe.TabIndex = 26;
+            this.cbTenHieuXe.ValueMember = "hieuxe";
+            // 
             // LapPhieuTiepNhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -348,14 +351,12 @@
         private System.Windows.Forms.GroupBox grTTKH;
         private System.Windows.Forms.Button load;
         private System.Windows.Forms.Label lbHx;
-        private System.Windows.Forms.TextBox txtTenHieuXe;
         private System.Windows.Forms.DateTimePicker dtNgaytiepnhan;
         private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TextBox txtSdt;
-        private System.Windows.Forms.TextBox txtBienso;
         private System.Windows.Forms.TextBox txtHT;
         private System.Windows.Forms.Label lbĐiaChi;
         private System.Windows.Forms.Label lbĐT;
@@ -369,5 +370,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider5;
         private System.Windows.Forms.ErrorProvider errorProvider6;
         private System.Windows.Forms.ErrorProvider errorProvider7;
+        private System.Windows.Forms.ComboBox cbTenHieuXe;
+        private System.Windows.Forms.TextBox txtBienso;
     }
 }

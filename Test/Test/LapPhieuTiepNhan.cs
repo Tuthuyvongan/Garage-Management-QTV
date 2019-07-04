@@ -1,5 +1,7 @@
 ﻿using LapPhieuTiepNhanBUS;
 using LapPhieuTiepNhanDTO;
+using TenHieuXeBUS;
+using TenHieuXeDTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,6 +27,7 @@ namespace Test
             InitializeComponent();
         }
         private TiepNhanBUS tnBus;
+        private HieuXeBUS hxBus;
         private void loadData_Vao_GridView()
         {
             List<TiepNhanDTO> listTiepNhan = tnBus.select();
@@ -124,9 +127,9 @@ namespace Test
             {
                 errorProvider5.SetError(txtSdt, "Số điện thoại không hợp lệ!");
             }
-            else if (txtTenHieuXe.Text == "")
+            else if (cbTenHieuXe.Text == "")
             {
-                errorProvider6.SetError(txtTenHieuXe, "Tên hiệu xe không được để trống!");
+                errorProvider6.SetError(cbTenHieuXe, "Tên hiệu xe không được để trống!");
             }
             else
             {
@@ -135,7 +138,7 @@ namespace Test
                 tn.HT = txtHT.Text;
                 tn.Ngaytiepnhan = dtNgaytiepnhan.Text;
                 tn.DiaChi = txtDiaChi.Text;
-                tn.HieuXe = txtTenHieuXe.Text;
+                tn.HieuXe = cbTenHieuXe.Text;
                 tn.Sdt = txtSdt.Text;
                 tn.Bienso = txtBienso.Text;
                 bool kq = tnBus.them(tn);
@@ -148,7 +151,7 @@ namespace Test
                 txtDiaChi.Text = "";
                 txtHT.Text = "";
                 txtSdt.Text = "";
-                txtTenHieuXe.Text = "";
+                cbTenHieuXe.Text = "";
                 txtMaPTN.Text = "";
             }
         }
@@ -180,9 +183,9 @@ namespace Test
             {
                 errorProvider5.SetError(txtSdt, "Số điện thoại không hợp lệ!");
             }
-            else if (txtTenHieuXe.Text == "")
+            else if (cbTenHieuXe.Text == "")
             {
-                errorProvider6.SetError(txtTenHieuXe, "Tên hiệu xe không được để trống!");
+                errorProvider6.SetError(cbTenHieuXe, "Tên hiệu xe không được để trống!");
             }
             else
             {
@@ -191,14 +194,14 @@ namespace Test
                 tn.HT = txtHT.Text;
                 tn.Ngaytiepnhan = dtNgaytiepnhan.Text;
                 tn.DiaChi = txtDiaChi.Text;
-                tn.HieuXe = txtTenHieuXe.Text;
+                tn.HieuXe = cbTenHieuXe.Text;
                 tn.Sdt = txtSdt.Text;
                 tn.Bienso = txtBienso.Text;
-                bool kq = tnBus.them(tn);
+                bool kq = tnBus.sua(tn);
                 if (kq == false)
-                    MessageBox.Show("Thêm thông tin thất bại. Vui lòng kiểm tra lại dữ liệu");
+                    MessageBox.Show("Sửa thông tin thất bại. Vui lòng kiểm tra lại dữ liệu");
                 else
-                    MessageBox.Show("Thêm thông tin thành công");
+                    MessageBox.Show("Sửa thông tin thành công");
                 this.loadData_Vao_GridView();               
             }
         }
@@ -220,7 +223,7 @@ namespace Test
                 txtDiaChi.Text = "";
                 txtHT.Text = "";
                 txtSdt.Text = "";
-                txtTenHieuXe.Text = "";
+                cbTenHieuXe.Text = "";
                 txtMaPTN.Text = "";
             }
         }
@@ -239,7 +242,7 @@ namespace Test
             txtDiaChi.Text = dataLPTN.Rows[t].Cells[3].Value.ToString();
             dtNgaytiepnhan.Text = dataLPTN.Rows[t].Cells[4].Value.ToString();
             txtSdt.Text = dataLPTN.Rows[t].Cells[5].Value.ToString();
-            txtTenHieuXe.Text = dataLPTN.Rows[t].Cells[6].Value.ToString();
+            cbTenHieuXe.Text = dataLPTN.Rows[t].Cells[6].Value.ToString();
         }
 
         private void txtHT_KeyPress(object sender, KeyPressEventArgs e)
@@ -268,6 +271,16 @@ namespace Test
             dtNgaytiepnhan.Format = DateTimePickerFormat.Custom;
             dtNgaytiepnhan.CustomFormat = "dd/MM/yyyy";
             tnBus = new TiepNhanBUS();
+            hxBus = new HieuXeBUS();
+            List<HieuXeDTO> ListHieuXe = hxBus.select();
+
+            if (ListHieuXe == null)
+            {
+                MessageBox.Show("Có lỗi khi lấy thông tin từ table Hieu Xe");
+                return;
+            }
+            cbTenHieuXe.DataSource = ListHieuXe;
+
         }
     }
 }

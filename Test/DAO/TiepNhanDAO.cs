@@ -27,7 +27,7 @@ namespace LapPhieuTiepNhanDAO
         {
             string query = string.Empty;
             query += "INSERT INTO [PhieuTiepNhan] (ht, bienso, sdt, ngaytiepnhan, diachi, hieuxe, matiepnhan)";
-            query += "VALUES (@ht,@bienso,@sdt,@ngaytiepnhan,@diachi,@hieuxe,@matiepnhan)";
+            query += "VALUES (@ht,@bienso,@sdt,@ngaytiepnhan,@diachi,@hieuxe,@matiepnhan)";           
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -63,7 +63,7 @@ namespace LapPhieuTiepNhanDAO
         public bool xoa(TiepNhanDTO tn)
         {
             string query = string.Empty;
-            query += "DELETE FROM PhieuTiepNhan WHERE [matiepnhan] = @matiepnhan"; ;
+            query += "DELETE FROM PhieuTiepNhan WHERE [matiepnhan] = @matiepnhan";            
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -93,7 +93,7 @@ namespace LapPhieuTiepNhanDAO
         public bool sua(TiepNhanDTO tn)
         {
             string query = string.Empty;
-            query += "UPDATE PhieuTiepNhan SET [ht] = @ht, [bienso] = @bienso, [sdt] = @sdt, [ngaytiepnhan] = @ngaytiepnhan, [diachi] = @diachi, [hieuxe] = @hieuxe WHERE [matiepnhan] = @matiepnhan";
+            query += "UPDATE PhieuTiepNhan SET [ht] = @ht, [bienso] = @bienso, [sdt] = @sdt, [ngaytiepnhan] = @ngaytiepnhan, [diachi] = @diachi, [hieuxe] = @hieuxe WHERE [matiepnhan] = @matiepnhan";           
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -130,7 +130,7 @@ namespace LapPhieuTiepNhanDAO
         {
             string query = string.Empty;
             query += "SELECT [ht], [bienso], [sdt], [ngaytiepnhan], [diachi], [hieuxe], [matiepnhan]";
-            query += "FROM [PhieuTiepNhan]";
+            query += "FROM [PhieuTiepNhan]";            
 
             List<TiepNhanDTO> lsTiepNhan = new List<TiepNhanDTO>();
 
@@ -157,7 +157,7 @@ namespace LapPhieuTiepNhanDAO
                                 tn.Bienso = reader["bienso"].ToString();
                                 tn.Sdt = reader["sdt"].ToString();
                                 tn.Ngaytiepnhan = reader["ngaytiepnhan"].ToString();
-                                tn.DiaChi= (reader["diachi"].ToString());
+                                tn.DiaChi= reader["diachi"].ToString();
                                 tn.HieuXe = reader["hieuxe"].ToString();
                                 tn.MaTiepNhan = int.Parse(reader["matiepnhan"].ToString());
                                 lsTiepNhan.Add(tn);
@@ -177,5 +177,6 @@ namespace LapPhieuTiepNhanDAO
             }
             return lsTiepNhan;
         }
+       
     }
 }
