@@ -197,8 +197,8 @@ namespace Test
                 tn.HieuXe = cbTenHieuXe.Text;
                 tn.Sdt = txtSdt.Text;
                 tn.Bienso = txtBienso.Text;
-                bool kq = tnBus.sua(tn);
-                if (kq == false)
+                bool kq1 = tnBus.sua(tn);
+                if (kq1 == false)
                     MessageBox.Show("Sửa thông tin thất bại. Vui lòng kiểm tra lại dữ liệu");
                 else
                     MessageBox.Show("Sửa thông tin thành công");
@@ -272,14 +272,14 @@ namespace Test
             dtNgaytiepnhan.CustomFormat = "dd/MM/yyyy";
             tnBus = new TiepNhanBUS();
             hxBus = new HieuXeBUS();
-            List<HieuXeDTO> ListHieuXe = hxBus.select();
+            List<HieuXeDTO> ListTenHieuXe = hxBus.selectTenHieuXe();
 
-            if (ListHieuXe == null)
+            if (ListTenHieuXe == null)
             {
                 MessageBox.Show("Có lỗi khi lấy thông tin từ table Hieu Xe");
                 return;
             }
-            cbTenHieuXe.DataSource = ListHieuXe;
+            cbTenHieuXe.DataSource = ListTenHieuXe;
 
         }
     }

@@ -20,9 +20,9 @@ namespace TenPhuTungBUS
         {
             return ptDao.select();
         }
-        public List<PhuTungDTO> select1(string sKeyword)
+        public List<PhuTungDTO> selectgia(string sKeyword)
         {
-            return ptDao.select1(sKeyword);
+            return ptDao.selectgia(sKeyword);
         }
     }
 }

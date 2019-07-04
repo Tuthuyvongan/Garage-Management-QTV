@@ -26,7 +26,7 @@ namespace Test
             InitializeComponent();
         }
         private PhuTungBUS ptBus;
-        private void loadData_Vao_GridView(List<PhuTungDTO> ListDonGia)
+        private void loadData_Vao_lbDonGia(List<PhuTungDTO> ListDonGia)
         {
             
 
@@ -58,11 +58,11 @@ namespace Test
             cbPhuTung.DataSource = ListPhuTung;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btLayGia_Click(object sender, EventArgs e)
         {
             string sKeyword = cbPhuTung.Text.Trim();
-            List<PhuTungDTO> ListDonGia = ptBus.select1(sKeyword);           
-                this.loadData_Vao_GridView(ListDonGia);            
+            List<PhuTungDTO> ListDonGia = ptBus.selectgia(sKeyword);           
+            this.loadData_Vao_lbDonGia(ListDonGia);            
         }
     }
 }

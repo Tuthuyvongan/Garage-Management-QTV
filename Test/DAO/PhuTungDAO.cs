@@ -67,7 +67,7 @@ namespace TenPhuTungDAO
             }
             return lsPhuTung;
         }
-        public List<PhuTungDTO> select1(string sKeyword)
+        public List<PhuTungDTO> selectgia(string sKeyword)
         {
             string query = string.Empty;            
             query += "SELECT [dongia]";

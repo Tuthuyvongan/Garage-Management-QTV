@@ -52,3 +52,5 @@ D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\Test\obj\Debug\GUI.cs
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csproj.CopyComplete
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\Test\obj\Debug\Test.exe
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\Test\obj\Debug\Test.pdb
+C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.LapPhieuSuaChua.resources
+C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyHieuXe.resources

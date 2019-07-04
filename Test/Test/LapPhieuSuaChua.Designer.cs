@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.cbPhuTung = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btLayGia = new System.Windows.Forms.Button();
             this.lbPhuTung = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -43,15 +43,15 @@
             this.cbPhuTung.TabIndex = 0;
             this.cbPhuTung.ValueMember = "tenphutung";
             // 
-            // button1
+            // btLayGia
             // 
-            this.button1.Location = new System.Drawing.Point(62, 128);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 38);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Lấy giá";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btLayGia.Location = new System.Drawing.Point(62, 128);
+            this.btLayGia.Name = "btLayGia";
+            this.btLayGia.Size = new System.Drawing.Size(75, 38);
+            this.btLayGia.TabIndex = 2;
+            this.btLayGia.Text = "Lấy giá";
+            this.btLayGia.UseVisualStyleBackColor = true;
+            this.btLayGia.Click += new System.EventHandler(this.btLayGia_Click);
             // 
             // lbPhuTung
             // 
@@ -70,7 +70,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbPhuTung);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btLayGia);
             this.Controls.Add(this.cbPhuTung);
             this.Name = "LapPhieuSuaChua";
             this.Text = "LapPhieuSuaChua";
@@ -82,7 +82,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cbPhuTung;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btLayGia;
         private System.Windows.Forms.ListBox lbPhuTung;
     }
 }
