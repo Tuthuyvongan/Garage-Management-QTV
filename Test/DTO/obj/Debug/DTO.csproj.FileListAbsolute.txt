@@ -10,3 +10,9 @@ C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csp
 C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.dll
 C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.pdb
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DTO\bin\Debug\DTO.dll
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DTO\bin\Debug\DTO.pdb
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.dll
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.pdb

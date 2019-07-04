@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HieuXeDAO.cs" />
+    <Compile Include="PhuTungDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThuTienDAO.cs" />
     <Compile Include="TiepNhanDAO.cs" />

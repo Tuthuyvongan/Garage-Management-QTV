@@ -20,3 +20,14 @@ C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\obj\Deb
 C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.dll
 C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.pdb
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\BUS.dll
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\BUS.pdb
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DAO.dll
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DTO.dll
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DAO.pdb
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DTO.pdb
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.csprojAssemblyReference.cache
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.csproj.CopyComplete
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.dll
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.pdb
