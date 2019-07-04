@@ -32,6 +32,7 @@
             this.txtHieuXe = new System.Windows.Forms.TextBox();
             this.lbHieuXe = new System.Windows.Forms.Label();
             this.grHieuXe = new System.Windows.Forms.GroupBox();
+            this.btLoad = new System.Windows.Forms.Button();
             this.lbID = new System.Windows.Forms.Label();
             this.txtMahieuxe = new System.Windows.Forms.TextBox();
             this.btXoa = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@
             this.dtHieuXe = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btLoad = new System.Windows.Forms.Button();
             this.grHieuXe.SuspendLayout();
             this.grCHX.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtHieuXe)).BeginInit();
@@ -51,7 +51,7 @@
             // 
             // txtHieuXe
             // 
-            this.txtHieuXe.Location = new System.Drawing.Point(118, 59);
+            this.txtHieuXe.Location = new System.Drawing.Point(115, 59);
             this.txtHieuXe.Name = "txtHieuXe";
             this.txtHieuXe.Size = new System.Drawing.Size(192, 22);
             this.txtHieuXe.TabIndex = 0;
@@ -61,7 +61,7 @@
             this.lbHieuXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHieuXe.Location = new System.Drawing.Point(4, 59);
             this.lbHieuXe.Name = "lbHieuXe";
-            this.lbHieuXe.Size = new System.Drawing.Size(108, 22);
+            this.lbHieuXe.Size = new System.Drawing.Size(105, 22);
             this.lbHieuXe.TabIndex = 1;
             this.lbHieuXe.Text = "Tên hiệu xe";
             // 
@@ -82,18 +82,28 @@
             this.grHieuXe.TabStop = false;
             this.grHieuXe.Text = "Quản lý hiệu xe";
             // 
+            // btLoad
+            // 
+            this.btLoad.Location = new System.Drawing.Point(226, 112);
+            this.btLoad.Name = "btLoad";
+            this.btLoad.Size = new System.Drawing.Size(92, 55);
+            this.btLoad.TabIndex = 7;
+            this.btLoad.Text = "Xem hiệu xe hiện có";
+            this.btLoad.UseVisualStyleBackColor = true;
+            this.btLoad.Click += new System.EventHandler(this.btLoad_Click);
+            // 
             // lbID
             // 
             this.lbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbID.Location = new System.Drawing.Point(8, 31);
             this.lbID.Name = "lbID";
-            this.lbID.Size = new System.Drawing.Size(92, 22);
+            this.lbID.Size = new System.Drawing.Size(101, 22);
             this.lbID.TabIndex = 6;
             this.lbID.Text = "Mã hiệu xe ";
             // 
             // txtMahieuxe
             // 
-            this.txtMahieuxe.Location = new System.Drawing.Point(118, 31);
+            this.txtMahieuxe.Location = new System.Drawing.Point(115, 31);
             this.txtMahieuxe.Name = "txtMahieuxe";
             this.txtMahieuxe.Size = new System.Drawing.Size(192, 22);
             this.txtMahieuxe.TabIndex = 5;
@@ -155,16 +165,6 @@
             // errorProvider2
             // 
             this.errorProvider2.ContainerControl = this;
-            // 
-            // btLoad
-            // 
-            this.btLoad.Location = new System.Drawing.Point(226, 112);
-            this.btLoad.Name = "btLoad";
-            this.btLoad.Size = new System.Drawing.Size(84, 55);
-            this.btLoad.TabIndex = 7;
-            this.btLoad.Text = "Xem hiệu xe hiện có";
-            this.btLoad.UseVisualStyleBackColor = true;
-            this.btLoad.Click += new System.EventHandler(this.btLoad_Click);
             // 
             // QuanLyHieuXe
             // 
