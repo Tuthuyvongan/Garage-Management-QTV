@@ -60,3 +60,4 @@ C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.Q
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\Test\obj\Debug\Test.ChiTietPhieuSuaChua.resources
 C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.ChiTietPhieuSuaChua.resources
 C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyTienCong.resources
+D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyTienCong.resources

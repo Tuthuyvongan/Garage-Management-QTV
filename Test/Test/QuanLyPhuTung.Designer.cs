@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.QLPT = new System.Windows.Forms.TabControl();
             this.tabQL = new System.Windows.Forms.TabPage();
+            this.btLoad = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.btSua = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
@@ -47,6 +48,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabTK = new System.Windows.Forms.TabPage();
+            this.btTK = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtTimKiem = new System.Windows.Forms.DataGridView();
             this.txtTK = new System.Windows.Forms.TextBox();
@@ -56,8 +58,6 @@
             this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.btLoad = new System.Windows.Forms.Button();
-            this.btTK = new System.Windows.Forms.Button();
             this.QLPT.SuspendLayout();
             this.tabQL.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -107,6 +107,16 @@
             this.tabQL.Text = "Quản lý phụ tùng";
             this.tabQL.UseVisualStyleBackColor = true;
             // 
+            // btLoad
+            // 
+            this.btLoad.Location = new System.Drawing.Point(686, 150);
+            this.btLoad.Name = "btLoad";
+            this.btLoad.Size = new System.Drawing.Size(75, 23);
+            this.btLoad.TabIndex = 14;
+            this.btLoad.Text = "Xem ";
+            this.btLoad.UseVisualStyleBackColor = true;
+            this.btLoad.Click += new System.EventHandler(this.btLoad_Click);
+            // 
             // btXoa
             // 
             this.btXoa.Location = new System.Drawing.Point(575, 150);
@@ -149,9 +159,12 @@
             // 
             // dtPhuTung
             // 
+            this.dtPhuTung.AllowUserToAddRows = false;
+            this.dtPhuTung.AllowUserToDeleteRows = false;
             this.dtPhuTung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtPhuTung.Location = new System.Drawing.Point(0, 22);
             this.dtPhuTung.Name = "dtPhuTung";
+            this.dtPhuTung.ReadOnly = true;
             this.dtPhuTung.RowTemplate.Height = 24;
             this.dtPhuTung.Size = new System.Drawing.Size(784, 276);
             this.dtPhuTung.TabIndex = 0;
@@ -246,6 +259,17 @@
             this.tabTK.Text = "Tìm kiếm phụ tùng";
             this.tabTK.UseVisualStyleBackColor = true;
             // 
+            // btTK
+            // 
+            this.btTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTK.Location = new System.Drawing.Point(535, 97);
+            this.btTK.Name = "btTK";
+            this.btTK.Size = new System.Drawing.Size(109, 34);
+            this.btTK.TabIndex = 3;
+            this.btTK.Text = "Tìm kiếm";
+            this.btTK.UseVisualStyleBackColor = true;
+            this.btTK.Click += new System.EventHandler(this.btTK_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dtTimKiem);
@@ -258,12 +282,15 @@
             // 
             // dtTimKiem
             // 
+            this.dtTimKiem.AllowUserToAddRows = false;
+            this.dtTimKiem.AllowUserToDeleteRows = false;
             this.dtTimKiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtTimKiem.Location = new System.Drawing.Point(-1, 22);
             this.dtTimKiem.Name = "dtTimKiem";
+            this.dtTimKiem.ReadOnly = true;
             this.dtTimKiem.RowTemplate.Height = 24;
             this.dtTimKiem.Size = new System.Drawing.Size(786, 324);
-            this.dtTimKiem.TabIndex = 0;           
+            this.dtTimKiem.TabIndex = 0;
             // 
             // txtTK
             // 
@@ -300,27 +327,6 @@
             // errorProvider5
             // 
             this.errorProvider5.ContainerControl = this;
-            // 
-            // btLoad
-            // 
-            this.btLoad.Location = new System.Drawing.Point(686, 150);
-            this.btLoad.Name = "btLoad";
-            this.btLoad.Size = new System.Drawing.Size(75, 23);
-            this.btLoad.TabIndex = 14;
-            this.btLoad.Text = "Xem ";
-            this.btLoad.UseVisualStyleBackColor = true;
-            this.btLoad.Click += new System.EventHandler(this.btLoad_Click);
-            // 
-            // btTK
-            // 
-            this.btTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTK.Location = new System.Drawing.Point(535, 97);
-            this.btTK.Name = "btTK";
-            this.btTK.Size = new System.Drawing.Size(109, 34);
-            this.btTK.TabIndex = 3;
-            this.btTK.Text = "Tìm kiếm";
-            this.btTK.UseVisualStyleBackColor = true;
-            this.btTK.Click += new System.EventHandler(this.btTK_Click);
             // 
             // QuanLyPhuTung
             // 

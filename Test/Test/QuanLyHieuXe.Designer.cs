@@ -118,9 +118,12 @@
             // 
             // dtHieuXe
             // 
+            this.dtHieuXe.AllowUserToAddRows = false;
+            this.dtHieuXe.AllowUserToDeleteRows = false;
             this.dtHieuXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtHieuXe.Location = new System.Drawing.Point(0, 22);
             this.dtHieuXe.Name = "dtHieuXe";
+            this.dtHieuXe.ReadOnly = true;
             this.dtHieuXe.RowTemplate.Height = 24;
             this.dtHieuXe.Size = new System.Drawing.Size(387, 191);
             this.dtHieuXe.TabIndex = 0;

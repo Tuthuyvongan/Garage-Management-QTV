@@ -21,7 +21,7 @@ namespace Test
         private TienCongBUS tcBus;
         private void loadData_Vao_GridView()
         {
-            tcBus = new TienCongBUS();
+
             List<TienCongDTO> listTienCong = tcBus.select();
 
             if (listTienCong == null)
@@ -63,11 +63,53 @@ namespace Test
             myCurrencyManager.Refresh();
 
         }
+        private void loadData_Vao_GridView(List<TienCongDTO> listTimKiem)
+        {           
+
+            if (listTimKiem == null)
+            {
+                MessageBox.Show("Có lỗi khi lấy thông tin");
+                return;
+            }
+            dtNTT.Columns.Clear();
+            dtNTT.DataSource = null;
+
+            dtNTT.AutoGenerateColumns = false;
+            dtNTT.AllowUserToAddRows = false;
+            dtNTT.DataSource = listTimKiem;
+
+            DataGridViewTextBoxColumn clmatiencong = new DataGridViewTextBoxColumn();
+            clmatiencong.Name = "matiencong";
+            clmatiencong.HeaderText = "Mã tiền công";
+            clmatiencong.DataPropertyName = "matiencong";
+            clmatiencong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtNTT.Columns.Add(clmatiencong);
+
+            DataGridViewTextBoxColumn clloaidichvu = new DataGridViewTextBoxColumn();
+            clloaidichvu.Name = "tendichvu";
+            clloaidichvu.HeaderText = "Tên dịch vụ";
+            clloaidichvu.DataPropertyName = "tendichvu";
+            clloaidichvu.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtNTT.Columns.Add(clloaidichvu);
+
+            DataGridViewTextBoxColumn cltiencong = new DataGridViewTextBoxColumn();
+            cltiencong.Name = "tiencong";
+            cltiencong.HeaderText = "Tiền công";
+            cltiencong.DataPropertyName = "tiencong";
+            cltiencong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtNTT.Columns.Add(cltiencong);
+
+
+
+            CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dtNTT.DataSource];
+            myCurrencyManager.Refresh();
+
+        }
 
         private void button_them_Click(object sender, EventArgs e)
         {
             
-            tcBus = new TienCongBUS();
+           
             TienCongDTO tc = new TienCongDTO();
             tc.Matiencong = int.Parse(txttmtc.Text);
             tc.Tendichvu = txttdv.Text;
@@ -81,11 +123,7 @@ namespace Test
             txttmtc.Text = "";
             txttdv.Text = "";
             txttc.Text = "";
-        }
-        public void QuanLyTienCong_Load(object sender,EventArgs e)
-        {
-            tcBus = new TienCongBUS();
-        }
+        }        
         private void button_Sua_Click(object sender, EventArgs e)
         {
             this.loadData_Vao_GridView();
@@ -93,9 +131,7 @@ namespace Test
 
         private void button_xoa_Click(object sender, EventArgs e)
         {
-
-
-            tcBus = new TienCongBUS();
+            
             DialogResult = MessageBox.Show("Bạn có chắc chắn muốn xóa ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (DialogResult == DialogResult.Yes)
             {
@@ -122,6 +158,27 @@ namespace Test
             txttmtc.Text = dgvTiencong.Rows[t].Cells[0].Value.ToString();
             txttdv.Text = dgvTiencong.Rows[t].Cells[1].Value.ToString();
             txttc.Text = dgvTiencong.Rows[t].Cells[2].Value.ToString();
+        }
+
+        private void btTK_Click(object sender, EventArgs e)
+        {
+            
+            string Key = txtNTT.Text.Trim();
+            if (Key == null || Key == string.Empty || Key.Length == 0)
+            {
+                List<TienCongDTO> listTimKiem = tcBus.select();
+                this.loadData_Vao_GridView(listTimKiem);
+            }
+            else
+            {
+                List<TienCongDTO> listTimKiem = tcBus.TimKiem(Key);
+                this.loadData_Vao_GridView(listTimKiem);
+            }
+        }
+
+        private void QuanLyTienCong_Load_1(object sender, EventArgs e)
+        {
+            tcBus = new TienCongBUS();
         }
     }
 }

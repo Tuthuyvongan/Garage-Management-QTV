@@ -34,9 +34,12 @@
             // 
             // dtchitiet
             // 
+            this.dtchitiet.AllowUserToAddRows = false;
+            this.dtchitiet.AllowUserToDeleteRows = false;
             this.dtchitiet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtchitiet.Location = new System.Drawing.Point(0, 0);
             this.dtchitiet.Name = "dtchitiet";
+            this.dtchitiet.ReadOnly = true;
             this.dtchitiet.RowTemplate.Height = 24;
             this.dtchitiet.Size = new System.Drawing.Size(801, 449);
             this.dtchitiet.TabIndex = 0;

@@ -39,8 +39,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvTiencong = new System.Windows.Forms.DataGridView();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dtNTT = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtNTT = new System.Windows.Forms.TextBox();
+            this.btTK = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTiencong)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNTT)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,7 +65,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(14, 13);
+            this.panel1.Location = new System.Drawing.Point(1, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(695, 128);
             this.panel1.TabIndex = 0;
@@ -139,26 +150,110 @@
             // 
             // dgvTiencong
             // 
+            this.dgvTiencong.AllowUserToAddRows = false;
+            this.dgvTiencong.AllowUserToDeleteRows = false;
             this.dgvTiencong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTiencong.Location = new System.Drawing.Point(14, 155);
+            this.dgvTiencong.Location = new System.Drawing.Point(1, 137);
             this.dgvTiencong.Name = "dgvTiencong";
+            this.dgvTiencong.ReadOnly = true;
             this.dgvTiencong.RowTemplate.Height = 24;
             this.dgvTiencong.Size = new System.Drawing.Size(693, 210);
             this.dgvTiencong.TabIndex = 1;
             this.dgvTiencong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTiencong_CellContentClick);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(-1, -1);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(707, 380);
+            this.tabControl1.TabIndex = 2;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.dgvTiencong);
+            this.tabPage1.Controls.Add(this.panel1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(699, 351);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Quản lý dịch vụ";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.btTK);
+            this.tabPage2.Controls.Add(this.txtNTT);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.dtNTT);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(699, 351);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Tìm kiếm dịch vụ";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dtNTT
+            // 
+            this.dtNTT.AllowUserToAddRows = false;
+            this.dtNTT.AllowUserToDeleteRows = false;
+            this.dtNTT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtNTT.Location = new System.Drawing.Point(0, 106);
+            this.dtNTT.Name = "dtNTT";
+            this.dtNTT.ReadOnly = true;
+            this.dtNTT.RowTemplate.Height = 24;
+            this.dtNTT.Size = new System.Drawing.Size(699, 245);
+            this.dtNTT.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(212, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(235, 20);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Nhập thông tin dịch vụ cần tìm";
+            // 
+            // txtNTT
+            // 
+            this.txtNTT.Location = new System.Drawing.Point(216, 58);
+            this.txtNTT.Name = "txtNTT";
+            this.txtNTT.Size = new System.Drawing.Size(231, 22);
+            this.txtNTT.TabIndex = 2;
+            // 
+            // btTK
+            // 
+            this.btTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTK.Location = new System.Drawing.Point(472, 51);
+            this.btTK.Name = "btTK";
+            this.btTK.Size = new System.Drawing.Size(101, 35);
+            this.btTK.TabIndex = 3;
+            this.btTK.Text = "Tìm Kiếm";
+            this.btTK.UseVisualStyleBackColor = true;
+            this.btTK.Click += new System.EventHandler(this.btTK_Click);
+            // 
             // QuanLyTienCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 371);
-            this.Controls.Add(this.dgvTiencong);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(702, 375);
+            this.Controls.Add(this.tabControl1);
             this.Name = "QuanLyTienCong";
             this.Text = "Quản lý tiền công";
+            this.Load += new System.EventHandler(this.QuanLyTienCong_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTiencong)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtNTT)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -176,5 +271,12 @@
         private System.Windows.Forms.Button button_Sua;
         private System.Windows.Forms.Button button_them;
         private System.Windows.Forms.DataGridView dgvTiencong;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Button btTK;
+        private System.Windows.Forms.TextBox txtNTT;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dtNTT;
     }
 }

@@ -35,6 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.grTTKH = new System.Windows.Forms.GroupBox();
+            this.cbTenHieuXe = new System.Windows.Forms.ComboBox();
             this.load = new System.Windows.Forms.Button();
             this.lbHx = new System.Windows.Forms.Label();
             this.dtNgaytiepnhan = new System.Windows.Forms.DateTimePicker();
@@ -43,6 +44,7 @@
             this.btXoa = new System.Windows.Forms.Button();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtSdt = new System.Windows.Forms.TextBox();
+            this.txtBienso = new System.Windows.Forms.TextBox();
             this.txtHT = new System.Windows.Forms.TextBox();
             this.lbĐiaChi = new System.Windows.Forms.Label();
             this.lbĐT = new System.Windows.Forms.Label();
@@ -56,8 +58,6 @@
             this.errorProvider5 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtBienso = new System.Windows.Forms.TextBox();
-            this.cbTenHieuXe = new System.Windows.Forms.ComboBox();
             this.grLPTT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLPTN)).BeginInit();
             this.grTTKH.SuspendLayout();
@@ -84,6 +84,7 @@
             // dataLPTN
             // 
             this.dataLPTN.AllowUserToAddRows = false;
+            this.dataLPTN.AllowUserToDeleteRows = false;
             this.dataLPTN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataLPTN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLPTN.Location = new System.Drawing.Point(3, 23);
@@ -145,6 +146,16 @@
             this.grTTKH.TabIndex = 13;
             this.grTTKH.TabStop = false;
             this.grTTKH.Text = "Thông tin phiếu thu tiền";
+            // 
+            // cbTenHieuXe
+            // 
+            this.cbTenHieuXe.DisplayMember = "hieuxe";
+            this.cbTenHieuXe.FormattingEnabled = true;
+            this.cbTenHieuXe.Location = new System.Drawing.Point(690, 100);
+            this.cbTenHieuXe.Name = "cbTenHieuXe";
+            this.cbTenHieuXe.Size = new System.Drawing.Size(423, 28);
+            this.cbTenHieuXe.TabIndex = 26;
+            this.cbTenHieuXe.ValueMember = "hieuxe";
             // 
             // load
             // 
@@ -218,6 +229,13 @@
             this.txtSdt.Size = new System.Drawing.Size(423, 27);
             this.txtSdt.TabIndex = 11;
             this.txtSdt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSdt_KeyPress);
+            // 
+            // txtBienso
+            // 
+            this.txtBienso.Location = new System.Drawing.Point(690, 32);
+            this.txtBienso.Name = "txtBienso";
+            this.txtBienso.Size = new System.Drawing.Size(423, 27);
+            this.txtBienso.TabIndex = 8;
             // 
             // txtHT
             // 
@@ -294,23 +312,6 @@
             // errorProvider7
             // 
             this.errorProvider7.ContainerControl = this;
-            // 
-            // txtBienso
-            // 
-            this.txtBienso.Location = new System.Drawing.Point(690, 32);
-            this.txtBienso.Name = "txtBienso";
-            this.txtBienso.Size = new System.Drawing.Size(423, 27);
-            this.txtBienso.TabIndex = 8;
-            // 
-            // cbTenHieuXe
-            // 
-            this.cbTenHieuXe.DisplayMember = "hieuxe";
-            this.cbTenHieuXe.FormattingEnabled = true;
-            this.cbTenHieuXe.Location = new System.Drawing.Point(690, 100);
-            this.cbTenHieuXe.Name = "cbTenHieuXe";
-            this.cbTenHieuXe.Size = new System.Drawing.Size(423, 28);
-            this.cbTenHieuXe.TabIndex = 26;
-            this.cbTenHieuXe.ValueMember = "hieuxe";
             // 
             // LapPhieuTiepNhan
             // 
