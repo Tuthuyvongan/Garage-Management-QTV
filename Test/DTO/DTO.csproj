@@ -46,7 +46,9 @@
     <Compile Include="HieuXeDTO.cs" />
     <Compile Include="PhuTungDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuaChuaDTO.cs" />
     <Compile Include="ThuTienDTO.cs" />
+    <Compile Include="TienCongDTO.cs" />
     <Compile Include="TiepNhanDTO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

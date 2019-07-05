@@ -4,17 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GetTienCongDTO
+namespace TenTienCongDTO
 {
     public class TienCongDTO
     {
-        private int maTienCong;
-        private string tenDichVu;
-        private float tienCong;
-
-
-        public int MaTienCong { get => maTienCong; set => maTienCong = value; }
-        public string TenDichVu { get => tenDichVu; set => tenDichVu = value; }
-        public float TienCong { get => tienCong; set => tienCong = value; }
+        public string Tendichvu
+        {
+            get { return tendichvu; }
+            set { tendichvu = value; }
+        }
+        public Decimal Tiencong
+        {
+            get { return tiencong; }
+            set { tiencong = value; }
+        }
+        public int Matiencong
+        {
+            get { return matiencong; }
+            set { matiencong = value; }
+        }
+        private int matiencong;
+        private string tendichvu;
+        private Decimal tiencong;
+      
     }
 }

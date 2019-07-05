@@ -36,5 +36,9 @@ namespace LapPhieuTiepNhanBUS
         {
             return tnDAO.select();
         }
+        public List<TiepNhanDTO> selectBS()
+        {
+            return tnDAO.selectBS();
+        }
     }
 }

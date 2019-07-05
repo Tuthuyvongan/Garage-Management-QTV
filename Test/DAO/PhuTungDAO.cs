@@ -22,7 +22,7 @@ namespace TenPhuTungDAO
         {
             connectionString = ConfigurationManager.AppSettings["ConnectionString"];
         }
-        public bool them(PhuTungDTO tt)
+        public bool them(PhuTungDTO pt)
         {
             string query = string.Empty;
             query += "INSERT INTO [PhuTung] (tenphutung,maphutung,dongia,tondau,toncuoi) ";
@@ -35,11 +35,11 @@ namespace TenPhuTungDAO
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@tenphutung", tt.Tenphutung);
-                    cmd.Parameters.AddWithValue("@maphutung", tt.Maphutung);
-                    cmd.Parameters.AddWithValue("@dongia", tt.Dongia);
-                    cmd.Parameters.AddWithValue("@tondau", tt.Tondau);
-                    cmd.Parameters.AddWithValue("@toncuoi", tt.Toncuoi);
+                    cmd.Parameters.AddWithValue("@tenphutung", pt.Tenphutung);
+                    cmd.Parameters.AddWithValue("@maphutung", pt.Maphutung);
+                    cmd.Parameters.AddWithValue("@dongia", pt.Dongia);
+                    cmd.Parameters.AddWithValue("@tondau", pt.Tondau);
+                    cmd.Parameters.AddWithValue("@toncuoi", pt.Toncuoi);
                     try
                     {
                         con.Open();
@@ -57,7 +57,7 @@ namespace TenPhuTungDAO
             }
             return true;
         }
-        public bool xoa(PhuTungDTO tt)
+        public bool xoa(PhuTungDTO pt)
         {
             string query = string.Empty;
             query += "DELETE FROM PhuTung WHERE [maphutung] = @maphutung"; ;
@@ -69,7 +69,7 @@ namespace TenPhuTungDAO
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@maphutung", tt.Maphutung);
+                    cmd.Parameters.AddWithValue("@maphutung", pt.Maphutung);
                     try
                     {
                         con.Open();
@@ -87,7 +87,7 @@ namespace TenPhuTungDAO
             }
             return true;
         }
-        public bool sua(PhuTungDTO tt)
+        public bool sua(PhuTungDTO pt)
         {
             string query = string.Empty;
             query += "UPDATE PhuTung SET [tenphutung] = @tenphutung, [dongia] = @dongia, [tondau] = @tondau, [toncuoi] = @toncuoi  WHERE [maphutung] = @maphutung";
@@ -99,11 +99,11 @@ namespace TenPhuTungDAO
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@tenphutung", tt.Tenphutung);
-                    cmd.Parameters.AddWithValue("@maphutung", tt.Maphutung);
-                    cmd.Parameters.AddWithValue("@dongia", tt.Dongia);
-                    cmd.Parameters.AddWithValue("@tondau", tt.Tondau);
-                    cmd.Parameters.AddWithValue("@toncuoi", tt.Toncuoi);
+                    cmd.Parameters.AddWithValue("@tenphutung", pt.Tenphutung);
+                    cmd.Parameters.AddWithValue("@maphutung", pt.Maphutung);
+                    cmd.Parameters.AddWithValue("@dongia", pt.Dongia);
+                    cmd.Parameters.AddWithValue("@tondau", pt.Tondau);
+                    cmd.Parameters.AddWithValue("@toncuoi", pt.Toncuoi);
                     try
                     {
                         con.Open();

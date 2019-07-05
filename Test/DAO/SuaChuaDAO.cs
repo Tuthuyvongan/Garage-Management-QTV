@@ -1,4 +1,4 @@
-﻿using LapPhieuTiepNhanDTO;
+﻿using LapPhieuSuaChuaDTO;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LapPhieuTiepNhanDAO
+namespace LapPhieuSuaChuaDAO
 {
-    public class TiepNhanDAO
+    public class SuaChuaDAO
     {
         private string connectionString;
 
@@ -19,15 +19,15 @@ namespace LapPhieuTiepNhanDAO
             set { connectionString = value; }
         }
 
-        public TiepNhanDAO()
+        public SuaChuaDAO()
         {
             connectionString = ConfigurationManager.AppSettings["ConnectionString"];
         }
-        public bool them(TiepNhanDTO tn)
+        public bool them(SuaChuaDTO sc)
         {
             string query = string.Empty;
-            query += "INSERT INTO [PhieuTiepNhan] (ht, bienso, sdt, ngaytiepnhan, diachi, hieuxe, matiepnhan)";
-            query += "VALUES (@ht,@bienso,@sdt,@ngaytiepnhan,@diachi,@hieuxe,@matiepnhan)";           
+            query += "INSERT INTO [PhieuSuaChua] (tendichvu, bienso, tiencong, ngaysuachua, tenphutung, dongia, soluong,thanhtien)";
+            query += "VALUES (@tendichvu,@bienso,@tiencong,@ngaysuachua,@tenphutung,@dongia,@soluong,@thanhtien)";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -36,13 +36,14 @@ namespace LapPhieuTiepNhanDAO
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@ht", tn.HT);
-                    cmd.Parameters.AddWithValue("@bienso", tn.Bienso);
-                    cmd.Parameters.AddWithValue("@sdt", tn.Sdt);
-                    cmd.Parameters.AddWithValue("@ngaytiepnhan", tn.Ngaytiepnhan);
-                    cmd.Parameters.AddWithValue("@diachi", tn.DiaChi);
-                    cmd.Parameters.AddWithValue("@hieuxe", tn.HieuXe);
-                    cmd.Parameters.AddWithValue("@matiepnhan", tn.MaTiepNhan);
+                    cmd.Parameters.AddWithValue("@tendichvu", sc.Tendichvu);
+                    cmd.Parameters.AddWithValue("@bienso", sc.Bienso);
+                    cmd.Parameters.AddWithValue("@tiencong", sc.Tiencong);
+                    cmd.Parameters.AddWithValue("@ngaysuachua", sc.Ngaysuachua);
+                    cmd.Parameters.AddWithValue("@tenphutung", sc.Tenphutung);
+                    cmd.Parameters.AddWithValue("@dongia", sc.Dongia);
+                    cmd.Parameters.AddWithValue("@soluong", sc.Soluong);
+                    cmd.Parameters.AddWithValue("@thanhtien", sc.Thanhtien);
                     try
                     {
                         con.Open();
@@ -60,10 +61,10 @@ namespace LapPhieuTiepNhanDAO
             }
             return true;
         }
-        public bool xoa(TiepNhanDTO tn)
+        public bool xoa(SuaChuaDTO sc)
         {
             string query = string.Empty;
-            query += "DELETE FROM PhieuTiepNhan WHERE [matiepnhan] = @matiepnhan";            
+            query += "DELETE FROM PhieuSuaChua WHERE [bienso] = @bienso";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -72,7 +73,7 @@ namespace LapPhieuTiepNhanDAO
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@matiepnhan", tn.MaTiepNhan);
+                    cmd.Parameters.AddWithValue("@bienso", sc.Bienso);
                     try
                     {
                         con.Open();
@@ -90,10 +91,10 @@ namespace LapPhieuTiepNhanDAO
             }
             return true;
         }
-        public bool sua(TiepNhanDTO tn)
+        public bool sua(SuaChuaDTO sc)
         {
             string query = string.Empty;
-            query += "UPDATE PhieuTiepNhan SET [ht] = @ht, [bienso] = @bienso, [sdt] = @sdt, [ngaytiepnhan] = @ngaytiepnhan, [diachi] = @diachi, [hieuxe] = @hieuxe WHERE [matiepnhan] = @matiepnhan";           
+            query += "UPDATE PhieuSuaChua SET [tendichvu] = @tendichvu, [thanhtien] = @thanhtien, [tiencong] = @tiencong, [ngaysuachua] = @ngaysuachua, [tenphutung] = @tenphutung, [dongia] = @dongia, [soluong] = @soluong WHERE bienso = bienso";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -102,13 +103,14 @@ namespace LapPhieuTiepNhanDAO
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@ht", tn.HT);
-                    cmd.Parameters.AddWithValue("@bienso", tn.Bienso);
-                    cmd.Parameters.AddWithValue("@sdt", tn.Sdt);
-                    cmd.Parameters.AddWithValue("@ngaytiepnhan", tn.Ngaytiepnhan);
-                    cmd.Parameters.AddWithValue("@diachi", tn.DiaChi);
-                    cmd.Parameters.AddWithValue("@hieuxe", tn.HieuXe);
-                    cmd.Parameters.AddWithValue("@matiepnhan", tn.MaTiepNhan);
+                    cmd.Parameters.AddWithValue("@tendichvu", sc.Tendichvu);
+                    cmd.Parameters.AddWithValue("@bienso", sc.Bienso);
+                    cmd.Parameters.AddWithValue("@tiencong", sc.Tiencong);
+                    cmd.Parameters.AddWithValue("@ngaysuachua", sc.Ngaysuachua);
+                    cmd.Parameters.AddWithValue("@tenphutung", sc.Tenphutung);
+                    cmd.Parameters.AddWithValue("@dongia", sc.Dongia);
+                    cmd.Parameters.AddWithValue("@soluong", sc.Soluong);
+                    cmd.Parameters.AddWithValue("@thanhtien", sc.Thanhtien);
                     try
                     {
                         con.Open();
@@ -126,13 +128,13 @@ namespace LapPhieuTiepNhanDAO
             }
             return true;
         }
-        public List<TiepNhanDTO> select()
+        public List<SuaChuaDTO> select()
         {
             string query = string.Empty;
-            query += "SELECT [ht], [bienso], [sdt], [ngaytiepnhan], [diachi], [hieuxe], [matiepnhan]";
-            query += "FROM [PhieuTiepNhan]";            
+            query += "SELECT [tendichvu], [bienso], [tiencong], [ngaysuachua], [tenphutung], [dongia], [soluong], [thanhtien]";
+            query += "FROM [PhieuSuaChua]";
 
-            List<TiepNhanDTO> lsTiepNhan = new List<TiepNhanDTO>();
+            List<SuaChuaDTO> IsSuaChua = new List<SuaChuaDTO>();
 
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
@@ -152,15 +154,15 @@ namespace LapPhieuTiepNhanDAO
                         {
                             while (reader.Read())
                             {
-                                TiepNhanDTO tn = new TiepNhanDTO();
-                                tn.HT = reader["ht"].ToString();
-                                tn.Bienso = reader["bienso"].ToString();
-                                tn.Sdt = reader["sdt"].ToString();
-                                tn.Ngaytiepnhan = reader["ngaytiepnhan"].ToString();
-                                tn.DiaChi= reader["diachi"].ToString();
-                                tn.HieuXe = reader["hieuxe"].ToString();
-                                tn.MaTiepNhan = int.Parse(reader["matiepnhan"].ToString());
-                                lsTiepNhan.Add(tn);
+                                SuaChuaDTO sc = new SuaChuaDTO();
+                                sc.Tendichvu = reader["tendichvu"].ToString();
+                                sc.Bienso = reader["bienso"].ToString();
+                                sc.Tiencong = Decimal.Parse(reader["tiencong"].ToString());
+                                sc.Ngaysuachua = reader["ngaysuachua"].ToString();
+                                sc.Tenphutung = reader["tenphutung"].ToString();
+                                sc.Dongia = Decimal.Parse(reader["dongia"].ToString());
+                                sc.Soluong = int.Parse(reader["soluong"].ToString());
+                                IsSuaChua.Add(sc);
                             }
                         }
 
@@ -175,15 +177,16 @@ namespace LapPhieuTiepNhanDAO
                     }
                 }
             }
-            return lsTiepNhan;
+            return IsSuaChua;
         }
-        public List<TiepNhanDTO> selectBS()
+        public List<SuaChuaDTO> Find(string K)
         {
             string query = string.Empty;
-            query += "SELECT [bienso]";
-            query += "FROM [PhieuTiepNhan]";
+            query += "SELECT [tendichvu], [bienso], [tiencong], [ngaysuachua], [tenphutung], [dongia], [soluong], [thanhtien]";
+            query += "FROM [PhieuSuaChua]";
+            query += " WHERE ([bienso] LIKE CONCAT('%',@K,'%'))";                  
 
-            List<TiepNhanDTO> IsBienSo = new List<TiepNhanDTO>();
+            List<SuaChuaDTO> IsFind = new List<SuaChuaDTO>();
 
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
@@ -193,7 +196,7 @@ namespace LapPhieuTiepNhanDAO
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-
+                    cmd.Parameters.AddWithValue("@K", K);
                     try
                     {
                         con.Open();
@@ -203,9 +206,15 @@ namespace LapPhieuTiepNhanDAO
                         {
                             while (reader.Read())
                             {
-                                TiepNhanDTO tn = new TiepNhanDTO();                               
-                                tn.Bienso = reader["bienso"].ToString();                              
-                                IsBienSo.Add(tn);
+                                SuaChuaDTO sc = new SuaChuaDTO();
+                                sc.Tendichvu = reader["tendichvu"].ToString();
+                                sc.Bienso = reader["bienso"].ToString();
+                                sc.Tiencong = Decimal.Parse(reader["tiencong"].ToString());
+                                sc.Ngaysuachua = reader["ngaysuachua"].ToString();
+                                sc.Tenphutung = reader["tenphutung"].ToString();
+                                sc.Dongia = Decimal.Parse(reader["dongia"].ToString());
+                                sc.Soluong = int.Parse(reader["soluong"].ToString());
+                                IsFind.Add(sc);
                             }
                         }
 
@@ -220,8 +229,7 @@ namespace LapPhieuTiepNhanDAO
                     }
                 }
             }
-            return IsBienSo;
+            return IsFind;
         }
-
     }
 }
