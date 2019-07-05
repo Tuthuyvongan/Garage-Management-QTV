@@ -277,7 +277,7 @@ namespace Test
         private void LapPhieuThuTien_Load(object sender, EventArgs e)
         {
             dtNgaythutien.Format = DateTimePickerFormat.Custom;
-            dtNgaythutien.CustomFormat = "dd/MM/yyyy";
+            dtNgaythutien.CustomFormat = "yyyy/MM/dd";
             ttBus = new ThuTienBUS();            
         }
 

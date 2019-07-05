@@ -275,7 +275,7 @@ namespace Test
         private void LapPhieuTiepNhan_Load(object sender, EventArgs e)
         {
             dtNgaytiepnhan.Format = DateTimePickerFormat.Custom;
-            dtNgaytiepnhan.CustomFormat = "dd/MM/yyyy";
+            dtNgaytiepnhan.CustomFormat = "yyyy/MM/dd";
             tnBus = new TiepNhanBUS();
             hxBus = new HieuXeBUS();
             List<HieuXeDTO> ListTenHieuXe = hxBus.selectTenHieuXe();

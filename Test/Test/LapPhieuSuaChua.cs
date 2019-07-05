@@ -98,9 +98,12 @@ namespace Test
                 MessageBox.Show("Có lỗi khi lấy thông tin từ table PhieuSuaChua");
                 return;
             }
-            cbBS.DataSource = ListBienSo;            
-
+            cbBS.DataSource = ListBienSo;
+            ngaysuachua.Format = DateTimePickerFormat.Custom;
+            ngaysuachua.CustomFormat = "yyyy/MM/dd";
            
+
+
         }
         private void cbPhuTung_SelectedIndexChanged(object sender, EventArgs e)
         {

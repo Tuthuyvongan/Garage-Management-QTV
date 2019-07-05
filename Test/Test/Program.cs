@@ -16,7 +16,7 @@ namespace Test
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyTienCong());
+            Application.Run(new LapPhieuTiepNhan());
         }
     }
 }
