@@ -35,6 +35,7 @@ namespace Test
         private TienCongBUS tcBus;
         private TiepNhanBUS tnBus;
         private SuaChuaBUS scBus;
+        Decimal thtien = 0;
         private void loadData_Vao_lbDonGia(List<PhuTungDTO> ListDonGia)
         {            
 
@@ -101,8 +102,10 @@ namespace Test
             cbBS.DataSource = ListBienSo;
             ngaysuachua.Format = DateTimePickerFormat.Custom;
             ngaysuachua.CustomFormat = "yyyy/MM/dd";
-           
-
+            txtThanhtien.Enabled = false;
+            //txtsoluong.Text = "1";           
+            //thtien = Decimal.Parse(cbGTC.Text) + Decimal.Parse(lbPhuTung.Text) * int.Parse(txtsoluong.Text);
+            //txtThanhtien.Text = thtien.ToString();
 
         }
         private void cbPhuTung_SelectedIndexChanged(object sender, EventArgs e)
@@ -149,23 +152,24 @@ namespace Test
 
         private void btThem_Click(object sender, EventArgs e)
         {
-                ChiTietPhieuSuaChua ct = new ChiTietPhieuSuaChua();
-                SuaChuaDTO sc = new SuaChuaDTO();
-                scBus = new SuaChuaBUS();
-                sc.Soluong = int.Parse(txtsoluong.Text);
-                sc.Tendichvu = cbDV.Text;
-                sc.Tiencong = Decimal.Parse(cbGTC.Text);             
-                sc.Tenphutung = cbPhuTung.Text;
-                sc.Dongia = Decimal.Parse(lbPhuTung.Text);                    
-                sc.Thanhtien = Decimal.Parse(cbThanhtien.Text);                
-                sc.Bienso = cbBS.Text;
-                sc.Ngaysuachua = ngaysuachua.Text;
-                bool kq = scBus.them(sc);
-                if (kq == false)
-                    MessageBox.Show("Thêm thông tin thất bại. Vui lòng kiểm tra lại dữ liệu");
-                else
-                    MessageBox.Show("Thêm thông tin thành công");
-                ct.loadData_Vao_GridView();         
+              ChiTietPhieuSuaChua ct = new ChiTietPhieuSuaChua();
+              SuaChuaDTO sc = new SuaChuaDTO();
+              scBus = new SuaChuaBUS();
+              sc.Soluong = int.Parse(txtsoluong.Text);
+              sc.Tendichvu = cbDV.Text;
+              sc.Tiencong = Decimal.Parse(cbGTC.Text);             
+              sc.Tenphutung = cbPhuTung.Text;
+              sc.Dongia = Decimal.Parse(lbPhuTung.Text);                          
+              txtThanhtien.Text = Convert.ToString(Decimal.Parse(cbGTC.Text) + Decimal.Parse(lbPhuTung.Text) * int.Parse(txtsoluong.Text));
+              sc.Thanhtien = Decimal.Parse(txtThanhtien.Text);
+              sc.Bienso = cbBS.Text;
+              sc.Ngaysuachua = ngaysuachua.Text;
+              bool kq = scBus.them(sc);
+              if (kq == false)
+                  MessageBox.Show("Thêm thông tin thất bại. Vui lòng kiểm tra lại dữ liệu");
+              else
+                  MessageBox.Show("Thêm thông tin thành công");
+              ct.loadData_Vao_GridView();         
         }
 
         private void cbDV_SelectedIndexChanged(object sender, EventArgs e)
@@ -173,6 +177,11 @@ namespace Test
             string sKey = cbDV.Text.Trim();
             List<TienCongDTO> ListTienCong = tcBus.selectgia(sKey);
             this.loadData_Vao_cbGTC(ListTienCong);
+            //if (lbPhuTung.SelectedIndex <= 0)
+            //{
+            //    txtThanhtien.Text = Convert.ToString(Decimal.Parse(cbGTC.Text) + Decimal.Parse(lbPhuTung.Text) * int.Parse(txtsoluong.Text));
+            //}
+            
         }
 
         public void cbBS_SelectedIndexChanged(object sender, EventArgs e)
@@ -190,6 +199,11 @@ namespace Test
                 List<SuaChuaDTO> ListFind = scBus.Find(K);
                 ct.loadData_Vao_GridView(ListFind);
             }
+        }
+
+        private void lbPhuTung_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }  
 }

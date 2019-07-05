@@ -91,43 +91,7 @@ namespace LapPhieuSuaChuaDAO
             }
             return true;
         }
-        public bool sua(SuaChuaDTO sc)
-        {
-            string query = string.Empty;
-            query += "UPDATE PhieuSuaChua SET [tendichvu] = @tendichvu, [thanhtien] = @thanhtien, [tiencong] = @tiencong, [ngaysuachua] = @ngaysuachua, [tenphutung] = @tenphutung, [dongia] = @dongia, [soluong] = @soluong WHERE bienso = bienso";
-            using (SqlConnection con = new SqlConnection(ConnectionString))
-            {
-
-                using (SqlCommand cmd = new SqlCommand())
-                {
-                    cmd.Connection = con;
-                    cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@tendichvu", sc.Tendichvu);
-                    cmd.Parameters.AddWithValue("@bienso", sc.Bienso);
-                    cmd.Parameters.AddWithValue("@tiencong", sc.Tiencong);
-                    cmd.Parameters.AddWithValue("@ngaysuachua", sc.Ngaysuachua);
-                    cmd.Parameters.AddWithValue("@tenphutung", sc.Tenphutung);
-                    cmd.Parameters.AddWithValue("@dongia", sc.Dongia);
-                    cmd.Parameters.AddWithValue("@soluong", sc.Soluong);
-                    cmd.Parameters.AddWithValue("@thanhtien", sc.Thanhtien);
-                    try
-                    {
-                        con.Open();
-                        cmd.ExecuteNonQuery();
-                        con.Close();
-                        con.Dispose();
-                    }
-                    catch (Exception ex)
-                    {
-                        con.Close();
-                        Console.WriteLine(ex);
-                        throw;
-                    }
-                }
-            }
-            return true;
-        }
+       
         public List<SuaChuaDTO> select()
         {
             string query = string.Empty;
@@ -162,6 +126,7 @@ namespace LapPhieuSuaChuaDAO
                                 sc.Tenphutung = reader["tenphutung"].ToString();
                                 sc.Dongia = Decimal.Parse(reader["dongia"].ToString());
                                 sc.Soluong = int.Parse(reader["soluong"].ToString());
+                                sc.Thanhtien= Decimal.Parse(reader["thanhtien"].ToString());
                                 IsSuaChua.Add(sc);
                             }
                         }
@@ -214,6 +179,7 @@ namespace LapPhieuSuaChuaDAO
                                 sc.Tenphutung = reader["tenphutung"].ToString();
                                 sc.Dongia = Decimal.Parse(reader["dongia"].ToString());
                                 sc.Soluong = int.Parse(reader["soluong"].ToString());
+                                sc.Thanhtien = Decimal.Parse(reader["thanhtien"].ToString());
                                 IsFind.Add(sc);
                             }
                         }

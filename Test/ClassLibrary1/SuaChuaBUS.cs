@@ -27,13 +27,6 @@ namespace LapPhieuSuaChuaBUS
             bool re = scDAO.xoa(sc);
             return re;
         }
-
-        public bool sua(SuaChuaDTO sc)
-        {
-            bool re = scDAO.sua(sc);
-            return re;
-        }
-
         public List<SuaChuaDTO> select()
         {
             return scDAO.select();

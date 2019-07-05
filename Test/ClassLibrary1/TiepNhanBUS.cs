@@ -40,5 +40,6 @@ namespace LapPhieuTiepNhanBUS
         {
             return tnDAO.selectBS();
         }
+       
     }
 }

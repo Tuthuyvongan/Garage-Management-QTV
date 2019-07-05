@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DemDAO.cs" />
     <Compile Include="HieuXeDAO.cs" />
     <Compile Include="PhuTungDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

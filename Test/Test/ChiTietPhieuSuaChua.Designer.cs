@@ -41,7 +41,7 @@
             this.dtchitiet.Name = "dtchitiet";
             this.dtchitiet.ReadOnly = true;
             this.dtchitiet.RowTemplate.Height = 24;
-            this.dtchitiet.Size = new System.Drawing.Size(801, 449);
+            this.dtchitiet.Size = new System.Drawing.Size(1333, 449);
             this.dtchitiet.TabIndex = 0;
             this.dtchitiet.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtchitiet_CellContentClick);
             // 
@@ -49,7 +49,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1318, 450);
             this.Controls.Add(this.dtchitiet);
             this.Name = "ChiTietPhieuSuaChua";
             this.Text = "ChiTietPhieuSuaChua";

@@ -93,12 +93,12 @@ namespace Test
             cltiencong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dtchitiet.Columns.Add(cltiencong);
 
-            DataGridViewTextBoxColumn cltt = new DataGridViewTextBoxColumn();
-            cltt.Name = "thanhtien";
-            cltt.HeaderText = "Thành tiền";
-            cltt.DataPropertyName = "thanhtien";
-            cltt.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dtchitiet.Columns.Add(cltt);
+            DataGridViewTextBoxColumn clthanhtien = new DataGridViewTextBoxColumn();
+            clthanhtien.Name = "thanhtien";
+            clthanhtien.HeaderText = "Thành tiền";
+            clthanhtien.DataPropertyName = "thanhtien";
+            clthanhtien.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtchitiet.Columns.Add(clthanhtien);
 
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dtchitiet.DataSource];
             myCurrencyManager.Refresh();
@@ -169,12 +169,12 @@ namespace Test
             cltiencong.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dtchitiet.Columns.Add(cltiencong);
 
-            DataGridViewTextBoxColumn cltt = new DataGridViewTextBoxColumn();
-            cltt.Name = "thanhtien";
-            cltt.HeaderText = "Thành tiền";
-            cltt.DataPropertyName = "thanhtien";
-            cltt.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dtchitiet.Columns.Add(cltt);
+            DataGridViewTextBoxColumn clthanhtien = new DataGridViewTextBoxColumn();
+            clthanhtien.Name = "thanhtien";
+            clthanhtien.HeaderText = "Thành tiền";
+            clthanhtien.DataPropertyName = "thanhtien";
+            clthanhtien.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dtchitiet.Columns.Add(clthanhtien);
 
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[dtchitiet.DataSource];
             myCurrencyManager.Refresh();

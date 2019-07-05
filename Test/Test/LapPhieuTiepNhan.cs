@@ -101,7 +101,8 @@ namespace Test
 
         }
         private void btThem_Click(object sender, EventArgs e)
-        {            
+        {
+            int Ngay = dtNgaytiepnhan.Value.Day;
             errorProvider1.Clear();
             errorProvider2.Clear();
             errorProvider4.Clear();

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DemBUS.cs" />
     <Compile Include="HieuXeBUS.cs" />
     <Compile Include="PhuTungBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

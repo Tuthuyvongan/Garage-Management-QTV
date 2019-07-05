@@ -44,7 +44,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.cbThanhtien = new System.Windows.Forms.ComboBox();
             this.btThem = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.btchitiet = new System.Windows.Forms.Button();
@@ -56,6 +55,7 @@
             this.errorProvider6 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider7 = new System.Windows.Forms.ErrorProvider(this.components);
             this.ngaysuachua = new System.Windows.Forms.DateTimePicker();
+            this.txtThanhtien = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
@@ -85,6 +85,7 @@
             this.lbPhuTung.Size = new System.Drawing.Size(304, 24);
             this.lbPhuTung.TabIndex = 4;
             this.lbPhuTung.ValueMember = "dongia";
+            this.lbPhuTung.SelectedIndexChanged += new System.EventHandler(this.lbPhuTung_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -203,14 +204,6 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Thành tiền";
             // 
-            // cbThanhtien
-            // 
-            this.cbThanhtien.FormattingEnabled = true;
-            this.cbThanhtien.Location = new System.Drawing.Point(650, 198);
-            this.cbThanhtien.Name = "cbThanhtien";
-            this.cbThanhtien.Size = new System.Drawing.Size(304, 24);
-            this.cbThanhtien.TabIndex = 19;
-            // 
             // btThem
             // 
             this.btThem.Location = new System.Drawing.Point(282, 239);
@@ -278,15 +271,23 @@
             this.ngaysuachua.TabIndex = 15;
             this.ngaysuachua.Value = new System.DateTime(2019, 7, 5, 0, 0, 0, 0);
             // 
+            // txtThanhtien
+            // 
+            this.txtThanhtien.Enabled = false;
+            this.txtThanhtien.Location = new System.Drawing.Point(650, 196);
+            this.txtThanhtien.Name = "txtThanhtien";
+            this.txtThanhtien.Size = new System.Drawing.Size(304, 22);
+            this.txtThanhtien.TabIndex = 23;
+            // 
             // LapPhieuSuaChua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1107, 303);
+            this.Controls.Add(this.txtThanhtien);
             this.Controls.Add(this.btchitiet);
             this.Controls.Add(this.btXoa);
             this.Controls.Add(this.btThem);
-            this.Controls.Add(this.cbThanhtien);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -344,7 +345,7 @@
         public System.Windows.Forms.ComboBox cbDV;
         public System.Windows.Forms.ComboBox cbGTC;
         public System.Windows.Forms.TextBox txtsoluong;
-        public System.Windows.Forms.ComboBox cbThanhtien;
         public System.Windows.Forms.DateTimePicker ngaysuachua;
+        private System.Windows.Forms.TextBox txtThanhtien;
     }
 }
