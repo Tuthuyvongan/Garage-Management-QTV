@@ -85,46 +85,14 @@ namespace TenTienCongDAO
                 }
             }
             return true;
-        }
-        public bool sua(TienCongDTO tc)
-        {
-            string query = string.Empty;
-            query += "UPDATE tiencong SET [tendichvu] = @tendichvu, [tiencong] = @tiencong, [tondau] = @tondau, [toncuoi] = @toncuoi  WHERE [matiencong] = @matiencong";
-            using (SqlConnection con = new SqlConnection(ConnectionString))
-            {
-
-                using (SqlCommand cmd = new SqlCommand())
-                {
-                    cmd.Connection = con;
-                    cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@tendichvu", tc.Tendichvu);
-                    cmd.Parameters.AddWithValue("@matiencong", tc.Matiencong);
-                    cmd.Parameters.AddWithValue("@tiencong", tc.Tiencong);                 
-                    try
-                    {
-                        con.Open();
-                        cmd.ExecuteNonQuery();
-                        con.Close();
-                        con.Dispose();
-                    }
-                    catch (Exception ex)
-                    {
-                        con.Close();
-                        Console.WriteLine(ex);
-                        throw;
-                    }
-                }
-            }
-            return true;
-        }
+        }       
         public List<TienCongDTO> select()
         {
             string query = string.Empty;
-            query += "SELECT [tendichvu], [tiencong], [tondau], [toncuoi], [matiencong]";
-            query += "FROM [tiencong]";
+            query += "SELECT [tendichvu], [tiencong], [matiencong]";
+            query += "FROM [TienCong]";
 
-            List<TienCongDTO> lstendichvu = new List<TienCongDTO>();
+            List<TienCongDTO> lsTienCong = new List<TienCongDTO>();
 
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
@@ -148,7 +116,7 @@ namespace TenTienCongDAO
                                 pt.Tendichvu = reader["tendichvu"].ToString();
                                 pt.Matiencong = int.Parse(reader["matiencong"].ToString());                                
                                 pt.Tiencong = Decimal.Parse(reader["tiencong"].ToString());
-                                lstendichvu.Add(pt);
+                                lsTienCong.Add(pt);
                             }
                         }
                         con.Close();
@@ -162,7 +130,7 @@ namespace TenTienCongDAO
                     }
                 }
             }
-            return lstendichvu;
+            return lsTienCong;
         }
         public List<TienCongDTO> selecttendichvu()
         {

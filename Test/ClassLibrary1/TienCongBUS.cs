@@ -26,13 +26,6 @@ namespace TenTienCongBUS
             bool re = tcDao.xoa(tc);
             return re;
         }
-
-        public bool sua(TienCongDTO tc)
-        {
-            bool re = tcDao.sua(tc);
-            return re;
-        }
-
         public List<TienCongDTO> select()
         {
             return tcDao.select();

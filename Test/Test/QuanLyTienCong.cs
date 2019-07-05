@@ -69,18 +69,18 @@ namespace Test
             
             tcBus = new TienCongBUS();
             TienCongDTO tc = new TienCongDTO();
-            tc.Matiencong = int.Parse(textBox1.Text);
-            tc.Tendichvu = textBox2.Text;
-            tc.Tiencong = int.Parse(textBox3.Text);
+            tc.Matiencong = int.Parse(txttmtc.Text);
+            tc.Tendichvu = txttdv.Text;
+            tc.Tiencong = Decimal.Parse(txttc.Text);
             bool kq = tcBus.them(tc);
             if (kq == false)
                 MessageBox.Show("Thêm thông tin thất bại. Vui lòng kiểm tra lại dữ liệu");
             else
                 MessageBox.Show("Thêm thông tin thành công");
             this.loadData_Vao_GridView();
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
+            txttmtc.Text = "";
+            txttdv.Text = "";
+            txttc.Text = "";
         }
         public void QuanLyTienCong_Load(object sender,EventArgs e)
         {
@@ -102,9 +102,7 @@ namespace Test
           
                 TienCongDTO tc = new TienCongDTO();
 
-                tc.Matiencong = int.Parse(textBox1.Text);
-                //tc.TenDichVu = textBox2.Text;
-                //tc.TienCong = float.Parse(textBox3.Text);
+                tc.Matiencong = int.Parse(txttmtc.Text);             
 
                 bool kq = tcBus.xoa(tc);
                 if (kq == false)
@@ -112,13 +110,18 @@ namespace Test
                 else
                     MessageBox.Show("Xóa thông tin thành công");
                 this.loadData_Vao_GridView();
-                textBox1.Text = "";
-                //textBox2.Text = "";
-                //textBox3.Text = "";
-             
-
+                txttmtc.Text = "";
+                txttdv.Text = "";
+                txttc.Text = "";           
             }
+        }
 
+        private void dgvTiencong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int t = dgvTiencong.CurrentCell.RowIndex;
+            txttmtc.Text = dgvTiencong.Rows[t].Cells[0].Value.ToString();
+            txttdv.Text = dgvTiencong.Rows[t].Cells[1].Value.ToString();
+            txttc.Text = dgvTiencong.Rows[t].Cells[2].Value.ToString();
         }
     }
 }

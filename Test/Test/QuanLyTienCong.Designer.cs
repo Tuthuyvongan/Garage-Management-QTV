@@ -32,9 +32,9 @@
             this.button_xoa = new System.Windows.Forms.Button();
             this.button_Sua = new System.Windows.Forms.Button();
             this.button_them = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txttc = new System.Windows.Forms.TextBox();
+            this.txttdv = new System.Windows.Forms.TextBox();
+            this.txttmtc = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,9 +48,9 @@
             this.panel1.Controls.Add(this.button_xoa);
             this.panel1.Controls.Add(this.button_Sua);
             this.panel1.Controls.Add(this.button_them);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txttc);
+            this.panel1.Controls.Add(this.txttdv);
+            this.panel1.Controls.Add(this.txttmtc);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -89,26 +89,26 @@
             this.button_them.UseVisualStyleBackColor = true;
             this.button_them.Click += new System.EventHandler(this.button_them_Click);
             // 
-            // textBox3
+            // txttc
             // 
-            this.textBox3.Location = new System.Drawing.Point(136, 85);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 22);
-            this.textBox3.TabIndex = 5;
+            this.txttc.Location = new System.Drawing.Point(136, 85);
+            this.txttc.Name = "txttc";
+            this.txttc.Size = new System.Drawing.Size(136, 22);
+            this.txttc.TabIndex = 5;
             // 
-            // textBox2
+            // txttdv
             // 
-            this.textBox2.Location = new System.Drawing.Point(137, 50);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(135, 22);
-            this.textBox2.TabIndex = 4;
+            this.txttdv.Location = new System.Drawing.Point(137, 50);
+            this.txttdv.Name = "txttdv";
+            this.txttdv.Size = new System.Drawing.Size(135, 22);
+            this.txttdv.TabIndex = 4;
             // 
-            // textBox1
+            // txttmtc
             // 
-            this.textBox1.Location = new System.Drawing.Point(137, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(135, 22);
-            this.textBox1.TabIndex = 3;
+            this.txttmtc.Location = new System.Drawing.Point(137, 13);
+            this.txttmtc.Name = "txttmtc";
+            this.txttmtc.Size = new System.Drawing.Size(135, 22);
+            this.txttmtc.TabIndex = 3;
             // 
             // label3
             // 
@@ -140,11 +140,12 @@
             // dgvTiencong
             // 
             this.dgvTiencong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTiencong.Location = new System.Drawing.Point(21, 155);
+            this.dgvTiencong.Location = new System.Drawing.Point(14, 155);
             this.dgvTiencong.Name = "dgvTiencong";
             this.dgvTiencong.RowTemplate.Height = 24;
-            this.dgvTiencong.Size = new System.Drawing.Size(672, 210);
+            this.dgvTiencong.Size = new System.Drawing.Size(693, 210);
             this.dgvTiencong.TabIndex = 1;
+            this.dgvTiencong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTiencong_CellContentClick);
             // 
             // QuanLyTienCong
             // 
@@ -168,9 +169,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txttc;
+        private System.Windows.Forms.TextBox txttdv;
+        private System.Windows.Forms.TextBox txttmtc;
         private System.Windows.Forms.Button button_xoa;
         private System.Windows.Forms.Button button_Sua;
         private System.Windows.Forms.Button button_them;
