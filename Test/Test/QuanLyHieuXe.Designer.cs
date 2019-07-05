@@ -33,10 +33,7 @@
             this.lbHieuXe = new System.Windows.Forms.Label();
             this.grHieuXe = new System.Windows.Forms.GroupBox();
             this.btLoad = new System.Windows.Forms.Button();
-            this.lbID = new System.Windows.Forms.Label();
-            this.txtMahieuxe = new System.Windows.Forms.TextBox();
             this.btXoa = new System.Windows.Forms.Button();
-            this.btSua = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
             this.grCHX = new System.Windows.Forms.GroupBox();
             this.dtHieuXe = new System.Windows.Forms.DataGridView();
@@ -51,7 +48,7 @@
             // 
             // txtHieuXe
             // 
-            this.txtHieuXe.Location = new System.Drawing.Point(115, 59);
+            this.txtHieuXe.Location = new System.Drawing.Point(115, 43);
             this.txtHieuXe.Name = "txtHieuXe";
             this.txtHieuXe.Size = new System.Drawing.Size(192, 22);
             this.txtHieuXe.TabIndex = 0;
@@ -59,7 +56,7 @@
             // lbHieuXe
             // 
             this.lbHieuXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHieuXe.Location = new System.Drawing.Point(4, 59);
+            this.lbHieuXe.Location = new System.Drawing.Point(0, 43);
             this.lbHieuXe.Name = "lbHieuXe";
             this.lbHieuXe.Size = new System.Drawing.Size(105, 22);
             this.lbHieuXe.TabIndex = 1;
@@ -68,10 +65,7 @@
             // grHieuXe
             // 
             this.grHieuXe.Controls.Add(this.btLoad);
-            this.grHieuXe.Controls.Add(this.lbID);
-            this.grHieuXe.Controls.Add(this.txtMahieuxe);
             this.grHieuXe.Controls.Add(this.btXoa);
-            this.grHieuXe.Controls.Add(this.btSua);
             this.grHieuXe.Controls.Add(this.btThem);
             this.grHieuXe.Controls.Add(this.lbHieuXe);
             this.grHieuXe.Controls.Add(this.txtHieuXe);
@@ -84,55 +78,29 @@
             // 
             // btLoad
             // 
-            this.btLoad.Location = new System.Drawing.Point(226, 112);
+            this.btLoad.Location = new System.Drawing.Point(198, 111);
             this.btLoad.Name = "btLoad";
-            this.btLoad.Size = new System.Drawing.Size(92, 55);
+            this.btLoad.Size = new System.Drawing.Size(109, 55);
             this.btLoad.TabIndex = 7;
             this.btLoad.Text = "Xem hiệu xe hiện có";
             this.btLoad.UseVisualStyleBackColor = true;
             this.btLoad.Click += new System.EventHandler(this.btLoad_Click);
             // 
-            // lbID
-            // 
-            this.lbID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbID.Location = new System.Drawing.Point(8, 31);
-            this.lbID.Name = "lbID";
-            this.lbID.Size = new System.Drawing.Size(101, 22);
-            this.lbID.TabIndex = 6;
-            this.lbID.Text = "Mã hiệu xe ";
-            // 
-            // txtMahieuxe
-            // 
-            this.txtMahieuxe.Location = new System.Drawing.Point(115, 31);
-            this.txtMahieuxe.Name = "txtMahieuxe";
-            this.txtMahieuxe.Size = new System.Drawing.Size(192, 22);
-            this.txtMahieuxe.TabIndex = 5;
-            // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(69, 161);
+            this.btXoa.Location = new System.Drawing.Point(51, 141);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(130, 31);
+            this.btXoa.Size = new System.Drawing.Size(130, 48);
             this.btXoa.TabIndex = 4;
             this.btXoa.Text = "Xóa hiệu xe";
             this.btXoa.UseVisualStyleBackColor = true;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
-            // btSua
-            // 
-            this.btSua.Location = new System.Drawing.Point(69, 124);
-            this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(130, 31);
-            this.btSua.TabIndex = 3;
-            this.btSua.Text = "Sửa hiệu xe";
-            this.btSua.UseVisualStyleBackColor = true;
-            this.btSua.Click += new System.EventHandler(this.btSua_Click);
-            // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(69, 87);
+            this.btThem.Location = new System.Drawing.Point(51, 87);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(130, 31);
+            this.btThem.Size = new System.Drawing.Size(130, 48);
             this.btThem.TabIndex = 2;
             this.btThem.Text = "Thêm hiệu xe";
             this.btThem.UseVisualStyleBackColor = true;
@@ -191,12 +159,9 @@
         private System.Windows.Forms.TextBox txtHieuXe;
         private System.Windows.Forms.GroupBox grHieuXe;
         private System.Windows.Forms.Button btXoa;
-        private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btThem;
         private System.Windows.Forms.GroupBox grCHX;
         private System.Windows.Forms.DataGridView dtHieuXe;
-        private System.Windows.Forms.Label lbID;
-        private System.Windows.Forms.TextBox txtMahieuxe;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ErrorProvider errorProvider2;
         private System.Windows.Forms.Button btLoad;

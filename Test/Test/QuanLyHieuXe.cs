@@ -41,13 +41,6 @@ namespace Test
             dtHieuXe.AllowUserToAddRows = false;
             dtHieuXe.DataSource = listHieuXe;
 
-            DataGridViewTextBoxColumn clid = new DataGridViewTextBoxColumn();
-            clid.Name = "mahieuxe";
-            clid.HeaderText = "ID";
-            clid.DataPropertyName = "mahieuxe";
-            clid.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dtHieuXe.Columns.Add(clid);            
-
             DataGridViewTextBoxColumn clhieuxe = new DataGridViewTextBoxColumn();
             clhieuxe.Name = "hieuxe";
             clhieuxe.HeaderText = "Tên hiệu xe";
@@ -63,19 +56,16 @@ namespace Test
         private void btThem_Click(object sender, EventArgs e)
         {
             errorProvider1.Clear();
-            errorProvider2.Clear();
+           
             if (txtHieuXe.Text == "")
             {
                 errorProvider1.SetError(txtHieuXe, "Tên hiệu Xe không được để trống!");
             }
-            else if (txtMahieuxe.Text == "")
-            {
-                errorProvider2.SetError(txtMahieuxe, "Mã hiệu xe không được để trống!");
-            }            
+                    
             else
             {
                 HieuXeDTO hx = new HieuXeDTO();
-                hx.Mahieuxe = int.Parse(txtMahieuxe.Text);
+                
                 hx.HieuXe = txtHieuXe.Text;               
                 bool kq = hxBus.them(hx);
                 if (kq == false)
@@ -83,36 +73,8 @@ namespace Test
                 else
                     MessageBox.Show("Thêm thông tin thành công");
                 this.loadData_Vao_GridView();
-                txtMahieuxe.Text = "";
+                
                 txtHieuXe.Text = "";                
-            }
-        }
-
-        private void btSua_Click(object sender, EventArgs e)
-        {
-            errorProvider1.Clear();
-            errorProvider2.Clear();
-            if (txtHieuXe.Text == "")
-            {
-                errorProvider1.SetError(txtHieuXe, "HieuXe không được để trống!");
-            }
-            else if (txtMahieuxe.Text == "")
-            {
-                errorProvider2.SetError(txtMahieuxe, "Mã hiệu xe không được để trống!");
-            }
-            else
-            {
-                HieuXeDTO hx = new HieuXeDTO();
-                hx.Mahieuxe = int.Parse(txtMahieuxe.Text);
-                hx.HieuXe = txtHieuXe.Text;
-                bool kq1 = hxBus.sua(hx);                
-                if (kq1 == false)
-                    MessageBox.Show("Sửa thông tin thất bại. Vui lòng kiểm tra lại dữ liệu");
-                else
-                    MessageBox.Show("Sửa thông tin thành công");
-                this.loadData_Vao_GridView();
-                txtMahieuxe.Text = "";
-                txtHieuXe.Text = "";
             }
         }
 
@@ -122,7 +84,7 @@ namespace Test
             if (DialogResult == DialogResult.Yes)
             {
                 HieuXeDTO hx = new HieuXeDTO();
-                hx.Mahieuxe = int.Parse(txtMahieuxe.Text);
+              
                 hx.HieuXe = txtHieuXe.Text;
                 bool kq2 = hxBus.xoa(hx);
                 if (kq2 == false)
@@ -130,7 +92,7 @@ namespace Test
                 else
                     MessageBox.Show("Xóa thông tin thành công");
                 this.loadData_Vao_GridView();
-                txtMahieuxe.Text = "";
+                
                 txtHieuXe.Text = "";
             }
         }
@@ -143,8 +105,7 @@ namespace Test
         private void dtHieuXe_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int t = dtHieuXe.CurrentCell.RowIndex;
-            txtMahieuxe.Text = dtHieuXe.Rows[t].Cells[0].Value.ToString();
-            txtHieuXe.Text = dtHieuXe.Rows[t].Cells[1].Value.ToString();
+            txtHieuXe.Text = dtHieuXe.Rows[t].Cells[0].Value.ToString();
         }
 
         private void btLoad_Click(object sender, EventArgs e)

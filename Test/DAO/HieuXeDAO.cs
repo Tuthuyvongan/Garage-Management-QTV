@@ -24,11 +24,11 @@ namespace TenHieuXeDAO
         {
             connectionString = ConfigurationManager.AppSettings["ConnectionString"];
         }
-        public bool them(HieuXeDTO tt)
+        public bool them(HieuXeDTO hx)
         {
             string query = string.Empty;
-            query += "INSERT INTO [HieuXe] (hieuxe,mahieuxe) ";
-            query += "VALUES (@hieuxe,@mahieuxe)";
+            query += "INSERT INTO [HieuXe] (hieuxe) ";
+            query += "VALUES (@hieuxe)";
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -37,8 +37,8 @@ namespace TenHieuXeDAO
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@hieuxe", tt.HieuXe);
-                    cmd.Parameters.AddWithValue("@mahieuxe", tt.Mahieuxe);
+                    cmd.Parameters.AddWithValue("@hieuxe", hx.HieuXe);
+                    
                     try
                     {
                         con.Open();
@@ -56,10 +56,10 @@ namespace TenHieuXeDAO
             }
             return true;
         }
-        public bool xoa(HieuXeDTO tt)
+        public bool xoa(HieuXeDTO hx)
         {
             string query = string.Empty;
-            query += "DELETE FROM HieuXe WHERE [mahieuxe] = @mahieuxe"; ;
+            query += "DELETE FROM HieuXe WHERE [hieuxe] = @hieuxe"; ;
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
 
@@ -68,7 +68,7 @@ namespace TenHieuXeDAO
                     cmd.Connection = con;
                     cmd.CommandType = System.Data.CommandType.Text;
                     cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@mahieuxe", tt.Mahieuxe);
+                    cmd.Parameters.AddWithValue("@hieuxe", hx.HieuXe);
                     try
                     {
                         con.Open();
@@ -86,41 +86,11 @@ namespace TenHieuXeDAO
             }
             return true;
         }
-        public bool sua(HieuXeDTO tt)
-        {
-            string query = string.Empty;
-            query += "UPDATE HieuXe SET [hieuxe] = @hieuxe WHERE [mahieuxe] = @mahieuxe";
-            using (SqlConnection con = new SqlConnection(ConnectionString))
-            {
-
-                using (SqlCommand cmd = new SqlCommand())
-                {
-                    cmd.Connection = con;
-                    cmd.CommandType = System.Data.CommandType.Text;
-                    cmd.CommandText = query;
-                    cmd.Parameters.AddWithValue("@hieuxe", tt.HieuXe);
-                    cmd.Parameters.AddWithValue("@mahieuxe", tt.Mahieuxe);
-                    try
-                    {
-                        con.Open();
-                        cmd.ExecuteNonQuery();
-                        con.Close();
-                        con.Dispose();
-                    }
-                    catch (Exception ex)
-                    {
-                        con.Close();
-                        Console.WriteLine(ex);
-                        throw;
-                    }
-                }
-            }
-            return true;
-        }
+        
         public List<HieuXeDTO> select()
         {
             string query = string.Empty;
-            query += "SELECT [hieuxe], [mahieuxe]";
+            query += "SELECT [hieuxe]";
             query += "FROM [HieuXe]";
 
             List<HieuXeDTO> lsHieuXe = new List<HieuXeDTO>();
@@ -145,7 +115,7 @@ namespace TenHieuXeDAO
                             {
                                 HieuXeDTO hx = new HieuXeDTO();                               
                                 hx.HieuXe = reader["hieuxe"].ToString();     
-                                hx.Mahieuxe = int.Parse(reader["mahieuxe"].ToString());
+                               
                                 lsHieuXe.Add(hx);
                             }
                         }

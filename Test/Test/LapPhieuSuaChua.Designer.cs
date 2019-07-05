@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.cbPhuTung = new System.Windows.Forms.ComboBox();
-            this.lbPhuTung = new System.Windows.Forms.ListBox();
+            this.lbPhuTung = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // cbPhuTung
             // 
             this.cbPhuTung.DisplayMember = "tenphutung";
             this.cbPhuTung.FormattingEnabled = true;
-            this.cbPhuTung.Location = new System.Drawing.Point(51, 37);
+            this.cbPhuTung.Location = new System.Drawing.Point(240, 122);
             this.cbPhuTung.Name = "cbPhuTung";
             this.cbPhuTung.Size = new System.Drawing.Size(304, 24);
             this.cbPhuTung.TabIndex = 0;
@@ -47,18 +47,17 @@
             // 
             this.lbPhuTung.DisplayMember = "dongia";
             this.lbPhuTung.FormattingEnabled = true;
-            this.lbPhuTung.ItemHeight = 16;
-            this.lbPhuTung.Location = new System.Drawing.Point(379, 37);
+            this.lbPhuTung.Location = new System.Drawing.Point(731, 122);
             this.lbPhuTung.Name = "lbPhuTung";
-            this.lbPhuTung.Size = new System.Drawing.Size(256, 36);
-            this.lbPhuTung.TabIndex = 3;
+            this.lbPhuTung.Size = new System.Drawing.Size(256, 24);
+            this.lbPhuTung.TabIndex = 4;
             this.lbPhuTung.ValueMember = "dongia";
             // 
             // LapPhieuSuaChua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1107, 625);
             this.Controls.Add(this.lbPhuTung);
             this.Controls.Add(this.cbPhuTung);
             this.Name = "LapPhieuSuaChua";
@@ -71,6 +70,6 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cbPhuTung;
-        private System.Windows.Forms.ListBox lbPhuTung;
+        private System.Windows.Forms.ComboBox lbPhuTung;
     }
 }
