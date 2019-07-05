@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DemDTO.cs" />
     <Compile Include="HieuXeDTO.cs" />
     <Compile Include="PhuTungDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

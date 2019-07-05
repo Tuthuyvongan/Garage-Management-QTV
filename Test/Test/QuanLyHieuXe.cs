@@ -64,8 +64,7 @@ namespace Test
                     
             else
             {
-                HieuXeDTO hx = new HieuXeDTO();
-                
+                HieuXeDTO hx = new HieuXeDTO();               
                 hx.HieuXe = txtHieuXe.Text;               
                 bool kq = hxBus.them(hx);
                 if (kq == false)

@@ -28,6 +28,7 @@ namespace Test
         }
         private TiepNhanBUS tnBus;
         private HieuXeBUS hxBus;
+        
         private void loadData_Vao_GridView()
         {
             List<TiepNhanDTO> listTiepNhan = tnBus.select();
@@ -102,7 +103,7 @@ namespace Test
         }
         private void btThem_Click(object sender, EventArgs e)
         {
-            int Ngay = dtNgaytiepnhan.Value.Day;
+          
             errorProvider1.Clear();
             errorProvider2.Clear();
             errorProvider4.Clear();
@@ -279,11 +280,12 @@ namespace Test
             dtNgaytiepnhan.CustomFormat = "yyyy/MM/dd";
             tnBus = new TiepNhanBUS();
             hxBus = new HieuXeBUS();
+          
             List<HieuXeDTO> ListTenHieuXe = hxBus.selectTenHieuXe();
 
             if (ListTenHieuXe == null)
             {
-                MessageBox.Show("Có lỗi khi lấy thông tin từ table Hieu Xe");
+                MessageBox.Show("Có lỗi khi lấy thông tin từ table HieuXe");
                 return;
             }
             cbTenHieuXe.DataSource = ListTenHieuXe;
