@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.cbPhuTung = new System.Windows.Forms.ComboBox();
-            this.btLayGia = new System.Windows.Forms.Button();
             this.lbPhuTung = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -39,26 +38,17 @@
             this.cbPhuTung.FormattingEnabled = true;
             this.cbPhuTung.Location = new System.Drawing.Point(51, 37);
             this.cbPhuTung.Name = "cbPhuTung";
-            this.cbPhuTung.Size = new System.Drawing.Size(130, 24);
+            this.cbPhuTung.Size = new System.Drawing.Size(304, 24);
             this.cbPhuTung.TabIndex = 0;
             this.cbPhuTung.ValueMember = "tenphutung";
-            // 
-            // btLayGia
-            // 
-            this.btLayGia.Location = new System.Drawing.Point(62, 128);
-            this.btLayGia.Name = "btLayGia";
-            this.btLayGia.Size = new System.Drawing.Size(75, 38);
-            this.btLayGia.TabIndex = 2;
-            this.btLayGia.Text = "Lấy giá";
-            this.btLayGia.UseVisualStyleBackColor = true;
-            this.btLayGia.Click += new System.EventHandler(this.btLayGia_Click);
+            this.cbPhuTung.SelectedIndexChanged += new System.EventHandler(this.cbPhuTung_SelectedIndexChanged);
             // 
             // lbPhuTung
             // 
             this.lbPhuTung.DisplayMember = "dongia";
             this.lbPhuTung.FormattingEnabled = true;
             this.lbPhuTung.ItemHeight = 16;
-            this.lbPhuTung.Location = new System.Drawing.Point(202, 37);
+            this.lbPhuTung.Location = new System.Drawing.Point(379, 37);
             this.lbPhuTung.Name = "lbPhuTung";
             this.lbPhuTung.Size = new System.Drawing.Size(256, 36);
             this.lbPhuTung.TabIndex = 3;
@@ -70,7 +60,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbPhuTung);
-            this.Controls.Add(this.btLayGia);
             this.Controls.Add(this.cbPhuTung);
             this.Name = "LapPhieuSuaChua";
             this.Text = "LapPhieuSuaChua";
@@ -82,7 +71,6 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cbPhuTung;
-        private System.Windows.Forms.Button btLayGia;
         private System.Windows.Forms.ListBox lbPhuTung;
     }
 }

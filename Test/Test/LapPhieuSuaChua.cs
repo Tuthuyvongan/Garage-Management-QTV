@@ -57,12 +57,11 @@ namespace Test
             }
             cbPhuTung.DataSource = ListTenPhuTung;
         }
-
-        private void btLayGia_Click(object sender, EventArgs e)
+        private void cbPhuTung_SelectedIndexChanged(object sender, EventArgs e)
         {
             string sKeyword = cbPhuTung.Text.Trim();
-            List<PhuTungDTO> ListDonGia = ptBus.selectgia(sKeyword);           
-            this.loadData_Vao_lbDonGia(ListDonGia);            
+            List<PhuTungDTO> ListDonGia = ptBus.selectgia(sKeyword);
+            this.loadData_Vao_lbDonGia(ListDonGia);
         }
     }
 }
