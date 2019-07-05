@@ -12,7 +12,7 @@ namespace QLGR.DAO
     {
         private static DataProvider instance; //Ctrl +R+E
 
-        private string connectionSTR = "Data Source=SLEEPYASH2401;Initial Catalog=QuanLyGara;Integrated Security=True";
+        private string connectionSTR = "Data Source=DESKTOP-7UNO207;Initial Catalog=QuanLyGara;Integrated Security=True";
 
         public static DataProvider Instance
         {

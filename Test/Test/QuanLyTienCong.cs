@@ -1,6 +1,4 @@
-﻿using GetTienCongDTO;
-using LoaiTienCongBUS;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TenTienCongBUS;
+using TenTienCongDTO;
 
 namespace Test
 {
@@ -69,9 +69,9 @@ namespace Test
             
             tcBus = new TienCongBUS();
             TienCongDTO tc = new TienCongDTO();
-            tc.MaTienCong = int.Parse(textBox1.Text);
-            tc.TenDichVu = textBox2.Text;
-            tc.TienCong = int.Parse(textBox3.Text);
+            tc.Matiencong = int.Parse(textBox1.Text);
+            tc.Tendichvu = textBox2.Text;
+            tc.Tiencong = int.Parse(textBox3.Text);
             bool kq = tcBus.them(tc);
             if (kq == false)
                 MessageBox.Show("Thêm thông tin thất bại. Vui lòng kiểm tra lại dữ liệu");
@@ -102,7 +102,7 @@ namespace Test
           
                 TienCongDTO tc = new TienCongDTO();
 
-                tc.MaTienCong = int.Parse(textBox1.Text);
+                tc.Matiencong = int.Parse(textBox1.Text);
                 //tc.TenDichVu = textBox2.Text;
                 //tc.TienCong = float.Parse(textBox3.Text);
 
