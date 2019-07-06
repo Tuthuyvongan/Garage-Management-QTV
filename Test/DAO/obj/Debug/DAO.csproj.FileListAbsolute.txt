@@ -25,3 +25,21 @@ D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.csp
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.csproj.CopyComplete
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.dll
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DAO\bin\Debug\DAO.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DAO\bin\Debug\DAO.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DAO\bin\Debug\DTO.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DAO\bin\Debug\DTO.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DAO\bin\Debug\DAO.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DAO\bin\Debug\DAO.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DAO\bin\Debug\DTO.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DAO\bin\Debug\DTO.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DAO\obj\Debug\DAO.pdb

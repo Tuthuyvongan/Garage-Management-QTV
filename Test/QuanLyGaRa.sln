@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{B50A171D-8C0D-466A-B4FC-8B354F9399B7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{73E05122-BBA8-4428-9680-3F3026224773}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\abstract-background-diagonal-blue-gradient-.jpg = ..\..\..\abstract-background-diagonal-blue-gradient-.jpg
+		..\..\..\Images\Logo.png = ..\..\..\Images\Logo.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

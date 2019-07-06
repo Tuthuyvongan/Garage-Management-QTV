@@ -16,3 +16,15 @@ D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csp
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.dll
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DTO\bin\Debug\DTO.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DTO\bin\Debug\DTO.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DTO\bin\Debug\DTO.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DTO\bin\Debug\DTO.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.pdb

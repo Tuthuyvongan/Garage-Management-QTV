@@ -84,7 +84,6 @@
             // dataLPTN
             // 
             this.dataLPTN.AllowUserToAddRows = false;
-            this.dataLPTN.AllowUserToDeleteRows = false;
             this.dataLPTN.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataLPTN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLPTN.Location = new System.Drawing.Point(3, 23);
@@ -324,6 +323,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grTTKH);
             this.Name = "LapPhieuTiepNhan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TiepNhanXeSua";
             this.Load += new System.EventHandler(this.LapPhieuTiepNhan_Load);
             this.grLPTT.ResumeLayout(false);

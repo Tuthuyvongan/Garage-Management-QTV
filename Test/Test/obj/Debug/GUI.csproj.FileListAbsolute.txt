@@ -57,7 +57,57 @@ C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.Q
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyHieuXe.resources
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyPhuTung.resources
 C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyPhuTung.resources
-D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\Test\obj\Debug\Test.ChiTietPhieuSuaChua.resources
-C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.ChiTietPhieuSuaChua.resources
-C:\Users\ADMIN\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyTienCong.resources
-D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyTienCong.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.LapPhieuSuaChua.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.LapPhieuThuTien.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.Properties.Resources.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.LapPhieuTiepNhan.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyHieuXe.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyPhuTung.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyTienCong.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.exe
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\bin\Debug\Test.exe.config
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\bin\Debug\Test.exe
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\bin\Debug\Test.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\bin\Debug\BUS.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\bin\Debug\DTO.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\bin\Debug\DAO.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\bin\Debug\BUS.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\bin\Debug\DTO.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\bin\Debug\DAO.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.MainMenu.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.ManHinhDangNhap.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.TaoTaiKhoanMoi.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.ThayDoiMatKhau.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\bin\Debug\Test.exe.config
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\bin\Debug\Test.exe
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\bin\Debug\Test.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\bin\Debug\BUS.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\bin\Debug\DTO.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\bin\Debug\DAO.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\bin\Debug\BUS.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\bin\Debug\DTO.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\bin\Debug\DAO.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csprojAssemblyReference.cache
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.LapPhieuSuaChua.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.LapPhieuThuTien.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.MainMenu.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.ManHinhDangNhap.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.Properties.Resources.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.LapPhieuTiepNhan.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyHieuXe.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyPhuTung.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyTienCong.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.TaoTaiKhoanMoi.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.ThayDoiMatKhau.resources
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.exe
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.ChiTietPhieuSuaChua.resources
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.ChiTietPhieuSuaChua.resources

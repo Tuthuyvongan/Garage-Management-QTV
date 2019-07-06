@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HieuXeBUS.cs" />
+    <Compile Include="NguoiDungBUS.cs" />
     <Compile Include="PhuTungBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SuaChuaBUS.cs" />

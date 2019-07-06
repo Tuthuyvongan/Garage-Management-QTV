@@ -31,3 +31,25 @@ D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\obj\Deb
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.csproj.CopyComplete
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.dll
 D:\Desktop\Đồ án cuối kì\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\BUS.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\BUS.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DAO.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DTO.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DAO.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DTO.pdb
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.dll
+C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\BUS.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\BUS.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DAO.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DTO.dll
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DAO.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\ClassLibrary1\bin\Debug\DTO.pdb
+C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\ClassLibrary1\obj\Debug\BUS.csproj.CopyComplete

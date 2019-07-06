@@ -1,4 +1,4 @@
-﻿using LoaiTienCongBUS;
+﻿using TenTienCongBUS;
 using nguoidungBUS;
 using nguoidungDTO;
 using System;

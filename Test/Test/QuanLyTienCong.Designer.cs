@@ -42,10 +42,10 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dtNTT = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtNTT = new System.Windows.Forms.TextBox();
             this.btTK = new System.Windows.Forms.Button();
+            this.txtNTT = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dtNTT = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTiencong)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -197,6 +197,34 @@
             this.tabPage2.Text = "Tìm kiếm dịch vụ";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // btTK
+            // 
+            this.btTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTK.Location = new System.Drawing.Point(472, 51);
+            this.btTK.Name = "btTK";
+            this.btTK.Size = new System.Drawing.Size(101, 35);
+            this.btTK.TabIndex = 3;
+            this.btTK.Text = "Tìm Kiếm";
+            this.btTK.UseVisualStyleBackColor = true;
+            this.btTK.Click += new System.EventHandler(this.btTK_Click);
+            // 
+            // txtNTT
+            // 
+            this.txtNTT.Location = new System.Drawing.Point(216, 58);
+            this.txtNTT.Name = "txtNTT";
+            this.txtNTT.Size = new System.Drawing.Size(231, 22);
+            this.txtNTT.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(212, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(235, 20);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Nhập thông tin dịch vụ cần tìm";
+            // 
             // dtNTT
             // 
             this.dtNTT.AllowUserToAddRows = false;
@@ -209,41 +237,15 @@
             this.dtNTT.Size = new System.Drawing.Size(699, 245);
             this.dtNTT.TabIndex = 0;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(212, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(235, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Nhập thông tin dịch vụ cần tìm";
-            // 
-            // txtNTT
-            // 
-            this.txtNTT.Location = new System.Drawing.Point(216, 58);
-            this.txtNTT.Name = "txtNTT";
-            this.txtNTT.Size = new System.Drawing.Size(231, 22);
-            this.txtNTT.TabIndex = 2;
-            // 
-            // btTK
-            // 
-            this.btTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTK.Location = new System.Drawing.Point(472, 51);
-            this.btTK.Name = "btTK";
-            this.btTK.Size = new System.Drawing.Size(101, 35);
-            this.btTK.TabIndex = 3;
-            this.btTK.Text = "Tìm Kiếm";
-            this.btTK.UseVisualStyleBackColor = true;
-            this.btTK.Click += new System.EventHandler(this.btTK_Click);
-            // 
             // QuanLyTienCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Test.Properties.Resources.abstract_background_diagonal_blue_gradient_;
             this.ClientSize = new System.Drawing.Size(702, 375);
             this.Controls.Add(this.tabControl1);
             this.Name = "QuanLyTienCong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý tiền công";
             this.Load += new System.EventHandler(this.QuanLyTienCong_Load_1);
             this.panel1.ResumeLayout(false);

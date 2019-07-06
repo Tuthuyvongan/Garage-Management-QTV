@@ -159,12 +159,9 @@
             // 
             // dtPhuTung
             // 
-            this.dtPhuTung.AllowUserToAddRows = false;
-            this.dtPhuTung.AllowUserToDeleteRows = false;
             this.dtPhuTung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtPhuTung.Location = new System.Drawing.Point(0, 22);
             this.dtPhuTung.Name = "dtPhuTung";
-            this.dtPhuTung.ReadOnly = true;
             this.dtPhuTung.RowTemplate.Height = 24;
             this.dtPhuTung.Size = new System.Drawing.Size(784, 276);
             this.dtPhuTung.TabIndex = 0;
@@ -282,12 +279,9 @@
             // 
             // dtTimKiem
             // 
-            this.dtTimKiem.AllowUserToAddRows = false;
-            this.dtTimKiem.AllowUserToDeleteRows = false;
             this.dtTimKiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtTimKiem.Location = new System.Drawing.Point(-1, 22);
             this.dtTimKiem.Name = "dtTimKiem";
-            this.dtTimKiem.ReadOnly = true;
             this.dtTimKiem.RowTemplate.Height = 24;
             this.dtTimKiem.Size = new System.Drawing.Size(786, 324);
             this.dtTimKiem.TabIndex = 0;
@@ -335,6 +329,7 @@
             this.ClientSize = new System.Drawing.Size(800, 523);
             this.Controls.Add(this.QLPT);
             this.Name = "QuanLyPhuTung";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuanLyPhuTung";
             this.Load += new System.EventHandler(this.QuanLyPhuTung_Load);
             this.QLPT.ResumeLayout(false);

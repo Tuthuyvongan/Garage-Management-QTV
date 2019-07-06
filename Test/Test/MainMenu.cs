@@ -33,5 +33,41 @@ namespace Test
             ThayDoiMatKhau f = new ThayDoiMatKhau();
             f.ShowDialog();
         }
+
+        private void lậpPhiếuTiếpNhậnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LapPhieuTiepNhan f = new LapPhieuTiepNhan();
+            f.ShowDialog();
+        }
+
+        private void lậpPhiếuThuTiềnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LapPhieuThuTien f = new LapPhieuThuTien();
+            f.ShowDialog();
+        }
+
+        private void lậpPhiếuSủaChữaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LapPhieuSuaChua f = new LapPhieuSuaChua();
+            f.ShowDialog();
+        }
+
+        private void thayĐổiThôngTinHiệuXeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyHieuXe f = new QuanLyHieuXe();
+            f.ShowDialog();
+        }
+
+        private void thayĐổiThôngTinPhụTùngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyPhuTung f = new QuanLyPhuTung();
+            f.ShowDialog();
+        }
+
+        private void thayĐổiThôngTinTiềnCôngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyTienCong f = new QuanLyTienCong();
+            f.ShowDialog();
+        }
     }
 }

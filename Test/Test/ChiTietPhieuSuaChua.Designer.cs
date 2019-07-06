@@ -52,6 +52,7 @@
             this.ClientSize = new System.Drawing.Size(1318, 450);
             this.Controls.Add(this.dtchitiet);
             this.Name = "ChiTietPhieuSuaChua";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChiTietPhieuSuaChua";
             this.Load += new System.EventHandler(this.ChiTietPhieuSuaChua_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtchitiet)).EndInit();

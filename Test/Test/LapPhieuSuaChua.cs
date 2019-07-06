@@ -102,9 +102,12 @@ namespace Test
             cbBS.DataSource = ListBienSo;
             ngaysuachua.Format = DateTimePickerFormat.Custom;
             ngaysuachua.CustomFormat = "yyyy/MM/dd";
-            txtThanhtien.Enabled = false;         
+            txtThanhtien.Enabled = false;
+            //txtsoluong.Text = "1";           
+            //thtien = Decimal.Parse(cbGTC.Text) + Decimal.Parse(lbPhuTung.Text) * int.Parse(txtsoluong.Text);
+            //txtThanhtien.Text = thtien.ToString();
+
         }
-        int lbPhuTung_index_value = -1;
         private void cbPhuTung_SelectedIndexChanged(object sender, EventArgs e)
         {
             string sKeyword = cbPhuTung.Text.Trim();
@@ -168,14 +171,17 @@ namespace Test
                   MessageBox.Show("Thêm thông tin thành công");
               ct.loadData_Vao_GridView();         
         }
-        
+
         private void cbDV_SelectedIndexChanged(object sender, EventArgs e)
         {
             string sKey = cbDV.Text.Trim();
             List<TienCongDTO> ListTienCong = tcBus.selectgia(sKey);
             this.loadData_Vao_cbGTC(ListTienCong);
+            //if (lbPhuTung.SelectedIndex <= 0)
+            //{
+            //    txtThanhtien.Text = Convert.ToString(Decimal.Parse(cbGTC.Text) + Decimal.Parse(lbPhuTung.Text) * int.Parse(txtsoluong.Text));
+            //}
             
-
         }
 
         public void cbBS_SelectedIndexChanged(object sender, EventArgs e)
@@ -195,6 +201,9 @@ namespace Test
             }
         }
 
-       
+        private void lbPhuTung_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }  
 }
