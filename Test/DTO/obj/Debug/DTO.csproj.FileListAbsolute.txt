@@ -28,3 +28,9 @@ C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DTO\obj\Debug\
 C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.dll
 C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.pdb
+D:\ADMIN\Documents\Garage-Management-QTV\Test\DTO\bin\Debug\DTO.dll
+D:\ADMIN\Documents\Garage-Management-QTV\Test\DTO\bin\Debug\DTO.pdb
+D:\ADMIN\Documents\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\ADMIN\Documents\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\ADMIN\Documents\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.dll
+D:\ADMIN\Documents\Garage-Management-QTV\Test\DTO\obj\Debug\DTO.pdb

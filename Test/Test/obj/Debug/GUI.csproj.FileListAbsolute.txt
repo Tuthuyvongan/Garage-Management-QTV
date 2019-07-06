@@ -111,3 +111,30 @@ C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug
 C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.pdb
 C:\Users\Sleepy Ash\Desktop\New folder\Garage-Management-QTV\Test\Test\obj\Debug\Test.ChiTietPhieuSuaChua.resources
 C:\Users\Sleepy Ash\Documents\GitHub\Garage-Management-QTV\Test\Test\obj\Debug\Test.ChiTietPhieuSuaChua.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\bin\Debug\Test.exe.config
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\bin\Debug\Test.exe
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\bin\Debug\Test.pdb
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\bin\Debug\BUS.dll
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\bin\Debug\DTO.dll
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\bin\Debug\DAO.dll
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\bin\Debug\BUS.pdb
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\bin\Debug\DTO.pdb
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\bin\Debug\DAO.pdb
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csprojAssemblyReference.cache
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.ChiTietPhieuSuaChua.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.LapPhieuSuaChua.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.LapPhieuThuTien.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.MainMenu.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.ManHinhDangNhap.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.Properties.Resources.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.LapPhieuTiepNhan.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyHieuXe.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyPhuTung.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.QuanLyTienCong.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.TaoTaiKhoanMoi.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.ThayDoiMatKhau.resources
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\GUI.csproj.CopyComplete
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.exe
+D:\ADMIN\Documents\Garage-Management-QTV\Test\Test\obj\Debug\Test.pdb

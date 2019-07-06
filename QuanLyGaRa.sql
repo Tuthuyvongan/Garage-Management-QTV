@@ -1,12 +1,7 @@
 ﻿USE [master]
 GO
-/****** Object:  Database [QuanLyGaRa]    Script Date: 7/5/2019 3:43:03 PM ******/
 CREATE DATABASE [QuanLyGaRa]
  CONTAINMENT = NONE
- ON  PRIMARY 
-( NAME = N'QuanLyGaRa', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\QuanLyGaRa.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
- LOG ON 
-( NAME = N'QuanLyGaRa_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL14.SQLEXPRESS\MSSQL\DATA\QuanLyGaRa_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
 GO
 ALTER DATABASE [QuanLyGaRa] SET COMPATIBILITY_LEVEL = 140
 GO
